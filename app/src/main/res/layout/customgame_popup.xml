@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80323232"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/customgame_emptyContainer1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.165"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/customgame_emptyContainer2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/customgame_popupClose"
+                android:clickable="true"
+                android:src="@drawable/quickplay_popup_closeselector"
+                app:layout_aspectRatio="100%"
+                app:layout_heightPercent="100%"
+                app:layout_marginRightPercent="4.5%" />
+        </android.support.percent.PercentRelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.01"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.655"
+        android:orientation="vertical">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/quickplay_popup_background"
+                app:layout_marginLeftPercent="4.5%"
+                app:layout_marginRightPercent="4.5%" />
+
+
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/customgame_circleContainer"
+            android:layout_width="match_parent"
+            app:layout_heightPercent= "4%"
+            app:layout_marginTopPercent="4%"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/customgame_circlePage1"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:src="@drawable/customgame_circleselected"
+                android:adjustViewBounds="true"
+                />
+
+            <ImageView
+                android:id="@+id/customgame_circlePage2"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:src="@drawable/customgame_circlenotselected"
+                android:adjustViewBounds="true"
+                android:layout_toRightOf="@id/customgame_circlePage1"
+                app:layout_marginLeftPercent="2%"
+                />
+        </android.support.percent.PercentRelativeLayout>
+
+            <TextView
+                android:id="@+id/customgame_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="@string/customgame_caps"
+                android:textColor="@color/primaryBlueForMainPage"
+                android:textSize="@dimen/_22ssp"
+                android:textStyle="bold"
+                android:gravity="center"
+                app:layout_marginLeftPercent="8.5%"
+                app:layout_marginRightPercent="8.5%"
+                app:layout_marginTopPercent="1%"
+                android:layout_below="@id/customgame_circleContainer"/>
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/customgame_viewpagerContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/customgame_title"
+                app:layout_marginLeftPercent="6%"
+                app:layout_marginRightPercent="5.5%"
+                />
+
+        <!--<android.support.percent.PercentRelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_below="@id/customgame_title"-->
+            <!--app:layout_marginLeftPercent="5.6%"-->
+            <!--app:layout_marginRightPercent="5.25%"-->
+            <!--&gt;-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/customgame_selectgamemodes"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/selectgamemodes"-->
+                <!--android:textColor="@color/primaryBlueForMainPage"-->
+                <!--app:layout_marginLeftPercent="5%"-->
+                <!--app:layout_marginTopPercent="1%"-->
+                <!--android:textSize="@dimen/_14ssp"-->
+                <!--/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/customgame_numberSelected"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--tools:text="3/21"-->
+                <!--android:textColor="@color/primaryBlueForMainPage"-->
+                <!--app:layout_marginRightPercent="5%"-->
+                <!--app:layout_marginTopPercent="1%"-->
+                <!--android:textSize="@dimen/_14ssp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--/>-->
+
+        <!--<android.support.percent.PercentRelativeLayout-->
+            <!--android:id="@+id/customgame_contentRectangle"-->
+            <!--android:layout_width="match_parent"-->
+            <!--app:layout_heightPercent= "70%"-->
+            <!--app:layout_marginRightPercent="5%"-->
+            <!--app:layout_marginLeftPercent="5%"-->
+            <!--app:layout_marginTopPercent="1%"-->
+            <!--android:layout_below="@id/customgame_selectgamemodes"-->
+            <!--android:background="@drawable/customgame_contentrectangle">-->
+            <!--</android.support.percent.PercentRelativeLayout>-->
+
+            <!--<com.react.reactmultiplayergame.helper.AutoResizeTextView-->
+                <!--android:id="@+id/customgame_selectAll_Button"-->
+                <!--app:layout_heightPercent= "12%"-->
+                <!--app:layout_widthPercent= "29%"-->
+                <!--android:layout_below="@id/customgame_contentRectangle"-->
+                <!--app:layout_marginTopPercent="2%"-->
+                <!--app:layout_marginLeftPercent="5%"-->
+                <!--android:text="@string/selectall"-->
+                <!--android:background="@drawable/editplayername_cancelselector"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="@color/primaryOrangeForMainPage"-->
+                <!--android:textSize="@dimen/_13ssp"-->
+                <!--android:maxLines="2"-->
+                <!--android:clickable="true"-->
+                <!--/>-->
+
+            <!--<com.react.reactmultiplayergame.helper.AutoResizeTextView-->
+                <!--android:id="@+id/customgame_selectNone_Button"-->
+                <!--app:layout_heightPercent= "12%"-->
+                <!--app:layout_widthPercent= "30%"-->
+                <!--android:layout_below="@id/customgame_contentRectangle"-->
+                <!--app:layout_marginTopPercent="2%"-->
+                <!--app:layout_marginLeftPercent="1%"-->
+                <!--android:layout_toRightOf="@id/customgame_selectAll_Button"-->
+                <!--android:text="@string/selectnone"-->
+                <!--android:background="@drawable/editplayername_cancelselector"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="@color/primaryOrangeForMainPage"-->
+                <!--android:textSize="@dimen/_13ssp"-->
+                <!--android:padding="@dimen/_4sdp"-->
+                <!--android:maxLines="2"-->
+                <!--android:clickable="true"-->
+                <!--/>-->
+
+            <!--<com.react.reactmultiplayergame.helper.AutoResizeTextView-->
+                <!--android:id="@+id/customgame_randomizeOrder_Button"-->
+                <!--app:layout_heightPercent= "12%"-->
+                <!--app:layout_widthPercent= "29%"-->
+                <!--android:layout_below="@id/customgame_contentRectangle"-->
+                <!--app:layout_marginTopPercent="2%"-->
+                <!--app:layout_marginLeftPercent="1%"-->
+                <!--android:layout_toRightOf="@id/customgame_selectNone_Button"-->
+                <!--android:text="@string/randomizeorder"-->
+                <!--android:background="@drawable/editplayername_doneselector"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--android:textSize="@dimen/_13ssp"-->
+                <!--android:padding="@dimen/_4sdp"-->
+                <!--android:maxLines="2"-->
+                <!--android:clickable="true"-->
+                <!--/>-->
+            <!--</android.support.percent.PercentRelativeLayout>-->
+
+
+
+            <!--<android.support.percent.PercentRelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_below="@id/customgame_title"-->
+            <!--app:layout_marginLeftPercent="5.6%"-->
+            <!--app:layout_marginRightPercent="5.25%">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/quickplay_choosedifficulty"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:fontFamily="sans-serif-condensed"-->
+                    <!--android:shadowColor="@color/text_shadow"-->
+                    <!--android:shadowDx="1"-->
+                    <!--android:shadowDy="1"-->
+                    <!--android:shadowRadius="2"-->
+                    <!--android:text="@string/choosedifficulty"-->
+                    <!--android:textColor="@color/primaryBlueForMainPage"-->
+                    <!--android:textSize="@dimen/_15ssp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--app:layout_marginLeftPercent="4.1%"-->
+                    <!--app:layout_marginRightPercent="4%"-->
+                    <!--app:layout_marginTopPercent="1%" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/quickplay_difficultybuttonContainer"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_below="@id/quickplay_choosedifficulty"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--app:layout_heightPercent="30%"-->
+                    <!--app:layout_marginLeftPercent="2.5%"-->
+                    <!--app:layout_marginRightPercent="2.5%"-->
+                    <!--app:layout_marginTopPercent="0.5%">-->
+
+                    <!--<android.support.percent.PercentRelativeLayout-->
+                        <!--android:id="@+id/quickplay_easy_Button"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1">-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/quickplay_easybackground"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:background="@drawable/roundedrectangle_popupdifficulty"-->
+                            <!--app:layout_aspectRatio="66.6%"-->
+                            <!--app:layout_heightPercent="100%" />-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/quickplay_easyicon"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:src="@drawable/popup_difficultyeasyicon"-->
+                            <!--app:layout_aspectRatio="100%"-->
+                            <!--app:layout_heightPercent="50%"-->
+                            <!--app:layout_marginTopPercent="10%" />-->
+
+                        <!--<com.react.reactmultiplayergame.helper.AutoResizeTextView-->
+                            <!--android:id="@+id/quickplay_easytext"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:fontFamily="sans-serif-black"-->
+                            <!--android:gravity="center_horizontal"-->
+                            <!--android:maxLines="1"-->
+                            <!--android:text="@string/easy"-->
+                            <!--android:textColor="@color/primaryOrangePopUp_LIGHT"-->
+                            <!--android:textSize="@dimen/_16ssp"-->
+                            <!--android:textStyle="bold"-->
+                            <!--app:layout_aspectRatio="55%"-->
+                            <!--app:layout_heightPercent="100%"-->
+                            <!--app:layout_marginTopPercent="65%" />-->
+                    <!--</android.support.percent.PercentRelativeLayout>-->
+
+                    <!--<android.support.percent.PercentRelativeLayout-->
+                        <!--android:id="@+id/quickplay_medium_Button"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1">-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/quickplay_mediumbackground"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:background="@drawable/roundedrectangle_popupdifficulty"-->
+                            <!--app:layout_aspectRatio="66.6%"-->
+                            <!--app:layout_heightPercent="100%" />-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/quickplay_mediumicon"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:src="@drawable/popup_difficultymediumicon"-->
+                            <!--app:layout_aspectRatio="100%"-->
+                            <!--app:layout_heightPercent="50%"-->
+                            <!--app:layout_marginTopPercent="10%" />-->
+
+                        <!--<com.react.reactmultiplayergame.helper.AutoResizeTextView-->
+                            <!--android:id="@+id/quickplay_mediumtext"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:fontFamily="sans-serif-condensed"-->
+                            <!--android:gravity="center_horizontal"-->
+                            <!--android:maxLines="1"-->
+                            <!--android:text="@string/medium"-->
+                            <!--android:textColor="@color/primaryOrangePopUp_LIGHT"-->
+                            <!--android:textSize="@dimen/_16ssp"-->
+                            <!--android:textStyle="bold"-->
+                            <!--app:layout_aspectRatio="55%"-->
+                            <!--app:layout_heightPercent="100%"-->
+                            <!--app:layout_marginTopPercent="65%" />-->
+                    <!--</android.support.percent.PercentRelativeLayout>-->
+
+                    <!--<android.support.percent.PercentRelativeLayout-->
+                        <!--android:id="@+id/quickplay_hard_Button"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1">-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/quickplay_hardbackground"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:background="@drawable/roundedrectangle_popupdifficulty"-->
+                            <!--app:layout_aspectRatio="66.6%"-->
+                            <!--app:layout_heightPercent="100%" />-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/quickplay_hardicon"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:src="@drawable/popup_difficultyhardicon"-->
+                            <!--app:layout_aspectRatio="100%"-->
+                            <!--app:layout_heightPercent="50%"-->
+                            <!--app:layout_marginTopPercent="10%" />-->
+
+                        <!--<com.react.reactmultiplayergame.helper.AutoResizeTextView-->
+                            <!--android:id="@+id/quickplay_hardtext"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:fontFamily="sans-serif-black"-->
+                            <!--android:gravity="center_horizontal"-->
+                            <!--android:maxLines="1"-->
+                            <!--android:text="@string/hard"-->
+                            <!--android:textColor="@color/primaryOrangePopUp_LIGHT"-->
+                            <!--android:textSize="@dimen/_16ssp"-->
+                            <!--android:textStyle="bold"-->
+                            <!--app:layout_aspectRatio="55%"-->
+                            <!--app:layout_heightPercent="100%"-->
+                            <!--app:layout_marginTopPercent="65%" />-->
+                    <!--</android.support.percent.PercentRelativeLayout>-->
+
+                    <!--<android.support.percent.PercentRelativeLayout-->
+                        <!--android:id="@+id/quickplay_insane_Button"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1">-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/quickplay_insanebackground"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:background="@drawable/roundedrectangle_popupdifficulty"-->
+                            <!--app:layout_aspectRatio="66.6%"-->
+                            <!--app:layout_heightPercent="100%" />-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/quickplay_insaneicon"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:src="@drawable/popup_difficultyinsaneicon"-->
+                            <!--app:layout_aspectRatio="100%"-->
+                            <!--app:layout_heightPercent="50%"-->
+                            <!--app:layout_marginTopPercent="10%" />-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/quickplay_insaneLockIcon"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:src="@drawable/popup_insanelock"-->
+                            <!--app:layout_aspectRatio="100%"-->
+                            <!--app:layout_heightPercent="22%"-->
+                            <!--app:layout_marginTopPercent="35%" />-->
+
+                        <!--<com.react.reactmultiplayergame.helper.AutoResizeTextView-->
+                            <!--android:id="@+id/quickplay_insanetext"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:fontFamily="sans-serif-condensed"-->
+                            <!--android:gravity="center_horizontal"-->
+                            <!--android:maxLines="1"-->
+                            <!--android:text="@string/insane"-->
+                            <!--android:textColor="@color/primaryOrangePopUp_LIGHT"-->
+                            <!--android:textSize="@dimen/_16ssp"-->
+                            <!--android:textStyle="bold"-->
+                            <!--app:layout_aspectRatio="55%"-->
+                            <!--app:layout_heightPercent="100%"-->
+                            <!--app:layout_marginTopPercent="65%" />-->
+                    <!--</android.support.percent.PercentRelativeLayout>-->
+                <!--</LinearLayout>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/quickplay_numberofplayers"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@id/quickplay_difficultybuttonContainer"-->
+                    <!--android:fontFamily="sans-serif-condensed"-->
+                    <!--android:shadowColor="@color/text_shadow"-->
+                    <!--android:shadowDx="1"-->
+                    <!--android:shadowDy="1"-->
+                    <!--android:shadowRadius="2"-->
+                    <!--android:text="@string/number_of_players"-->
+                    <!--android:textColor="@color/primaryBlueForMainPage"-->
+                    <!--android:textSize="@dimen/_15ssp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--app:layout_marginLeftPercent="4.1%"-->
+                    <!--app:layout_marginTopPercent="3.5%" />-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@id/quickplay_difficultybuttonContainer"-->
+                    <!--android:gravity="right"-->
+                    <!--app:layout_marginRightPercent="4%"-->
+                    <!--app:layout_marginTopPercent="2.5%">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/quickplay_editplayername_Button"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:background="@drawable/popup_editplayernameselector"-->
+                        <!--android:clickable="true"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_heightPercent="11%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/threebuttons_noofplayersContainer"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_below="@id/quickplay_numberofplayers"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--app:layout_heightPercent="23%"-->
+                    <!--app:layout_marginLeftPercent="3%"-->
+                    <!--app:layout_marginRightPercent="3%"-->
+                    <!--app:layout_marginTopPercent="1%">-->
+
+                    <!--<android.support.percent.PercentRelativeLayout-->
+                        <!--android:id="@+id/quickplay_twoplayer_Button"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1">-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/quickplay_twoplayerbackground"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:background="@drawable/roundedrectangle_popupdifficulty"-->
+                            <!--app:layout_aspectRatio="125%"-->
+                            <!--app:layout_heightPercent="100%" />-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/quickplay_twoplayericon"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:layout_centerInParent="true"-->
+                            <!--android:src="@drawable/quickplay_twoplayericon"-->
+                            <!--app:layout_aspectRatio="100%"-->
+                            <!--app:layout_heightPercent="60%"-->
+                            <!--app:layout_marginTopPercent="10%" />-->
+
+                    <!--</android.support.percent.PercentRelativeLayout>-->
+
+                    <!--<android.support.percent.PercentRelativeLayout-->
+                        <!--android:id="@+id/quickplay_threeplayer_Button"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1">-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/quickplay_threeplayerbackground"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:background="@drawable/roundedrectangle_popupdifficulty"-->
+                            <!--app:layout_aspectRatio="125%"-->
+                            <!--app:layout_heightPercent="100%" />-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/quickplay_threeplayericon"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:layout_centerInParent="true"-->
+                            <!--android:src="@drawable/quickplay_threeplayericon"-->
+                            <!--app:layout_aspectRatio="100%"-->
+                            <!--app:layout_heightPercent="70%"-->
+                            <!--app:layout_marginTopPercent="10%" />-->
+
+                    <!--</android.support.percent.PercentRelativeLayout>-->
+
+                    <!--<android.support.percent.PercentRelativeLayout-->
+                        <!--android:id="@+id/quickplay_fourplayer_Button"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1">-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/quickplay_fourplayerbackground"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:background="@drawable/roundedrectangle_popupdifficulty"-->
+                            <!--app:layout_aspectRatio="125%"-->
+                            <!--app:layout_heightPercent="100%" />-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/quickplay_fourplayericon"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:layout_centerInParent="true"-->
+                            <!--android:src="@drawable/quickplay_fourplayericon"-->
+                            <!--app:layout_aspectRatio="130%"-->
+                            <!--app:layout_heightPercent="60%"-->
+                            <!--app:layout_marginTopPercent="10%" />-->
+
+                    <!--</android.support.percent.PercentRelativeLayout>-->
+                <!--</LinearLayout>-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@id/threebuttons_noofplayersContainer"-->
+                    <!--app:layout_marginLeftPercent="4%"-->
+                    <!--app:layout_marginRightPercent="4%"-->
+                    <!--app:layout_marginTopPercent="2.5%">-->
+                    <!--&lt;!&ndash; Background set dynamically with selector states &ndash;&gt;-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/quickplay_start_Button"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--app:layout_heightPercent="65%"-->
+                        <!--android:background="@drawable/popup_startbutton"/>-->
+
+                    <!--<com.react.reactmultiplayergame.helper.AutoResizeTextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:fontFamily="sans-serif-condensed"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="@string/start"-->
+                        <!--android:textColor="#FFFFFF"-->
+                        <!--android:textSize="@dimen/_21ssp"-->
+                        <!--android:textStyle="bold"-->
+                        <!--app:layout_heightPercent="65%" />-->
+
+                <!--</android.support.percent.PercentRelativeLayout>-->
+            <!--</android.support.percent.PercentRelativeLayout>-->
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/customgame_emptyContainer3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.12"
+        android:orientation="vertical"></LinearLayout>
+</LinearLayout>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/faq_question1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/faqbottomlineonlybackground">
+
+        <TextView
+            android:id="@+id/faqtext1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:text="@string/faq_qn1"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_20sdp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/faq_qn1ImageView"
+            android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:src="@drawable/faqarrow_down"
+            android:layout_alignBottom="@id/faqtext1"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/faq_answer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:el_duration="500"
+        app:el_expanded="false"
+        app:el_parallax="0.5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_16sdp"
+            android:text="@string/faq_qn1_desc"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/faqbottomlineonlybackground"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:textSize="16sp"
+            />
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+    <!-- @@@@@@@@@@@@@@@@@@@@  -->
+    <RelativeLayout
+        android:id="@+id/faq_question2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/faqbottomlineonlybackground">
+
+        <TextView
+            android:id="@+id/faqtext2"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:text="@string/faq_qn2"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_20sdp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"/>
+
+        <ImageView
+            android:id="@+id/faq_qn2ImageView"
+            android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/faqarrow_down"
+            android:layout_alignBottom="@id/faqtext2"
+            android:layout_marginBottom="@dimen/_20sdp"/>
+
+
+    </RelativeLayout>
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/faq_answer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:el_duration="500"
+        app:el_expanded="false"
+        app:el_parallax="0.5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:text="@string/faq_qn2_desc"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/faqbottomlineonlybackground"
+            android:paddingBottom="@dimen/_10sdp"
+            android:textSize="16sp"
+            />
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@  -->
+    <RelativeLayout
+        android:id="@+id/faq_question3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/faqbottomlineonlybackground">
+
+        <TextView
+            android:id="@+id/faqtext3"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:text="@string/faq_qn3"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_20sdp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/faq_qn3ImageView"
+            android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/faqarrow_down"
+            android:layout_alignBottom="@id/faqtext3"
+            android:layout_marginBottom="@dimen/_20sdp"/>
+
+
+    </RelativeLayout>
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/faq_answer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:el_duration="500"
+        app:el_expanded="false"
+        app:el_parallax="0.5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:text="@string/faq_qn3_desc"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/faqbottomlineonlybackground"
+            android:paddingBottom="@dimen/_10sdp"
+            android:textSize="16sp"
+            />
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@  -->
+    <RelativeLayout
+        android:id="@+id/faq_question4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/faqbottomlineonlybackground">
+
+        <TextView
+            android:id="@+id/faqtext4"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:text="@string/faq_qn4"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_20sdp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/faq_qn4ImageView"
+            android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/faqarrow_down"
+            android:layout_alignBottom="@id/faqtext4"
+            android:layout_marginBottom="@dimen/_20sdp"/>
+
+
+    </RelativeLayout>
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/faq_answer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:el_duration="500"
+        app:el_expanded="false"
+        app:el_parallax="0.5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:text="@string/faq_qn4_desc"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/faqbottomlineonlybackground"
+            android:paddingBottom="@dimen/_10sdp"
+            android:textSize="16sp"
+            />
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@  -->
+    <RelativeLayout
+        android:id="@+id/faq_question5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/faqbottomlineonlybackground">
+
+        <TextView
+            android:id="@+id/faqtext5"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:text="@string/faq_qn5"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_20sdp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/faq_qn5ImageView"
+            android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/faqarrow_down"
+            android:layout_alignBottom="@id/faqtext5"
+            android:layout_marginBottom="@dimen/_20sdp"/>
+
+
+    </RelativeLayout>
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/faq_answer5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:el_duration="500"
+        app:el_expanded="false"
+        app:el_parallax="0.5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:text="@string/faq_qn5_desc"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/faqbottomlineonlybackground"
+            android:paddingBottom="@dimen/_10sdp"
+            android:textSize="16sp"
+            />
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+        <!-- @@@@@@@@@@@@@@@@@@@@  -->
+        <RelativeLayout
+            android:id="@+id/faq_question6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/faqbottomlineonlybackground">
+
+            <TextView
+                android:id="@+id/faqtext6"
+                android:layout_width="match_parent"
+                android:layout_marginRight="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:text="@string/faq_qn6"
+                android:gravity="center_vertical"
+                android:paddingTop="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/faq_qn6ImageView"
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/faqarrow_down"
+                android:layout_alignBottom="@id/faqtext6"
+                android:layout_marginBottom="@dimen/_20sdp"/>
+
+
+        </RelativeLayout>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/faq_answer6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="500"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_16sdp"
+                android:paddingRight="@dimen/_16sdp"
+                android:text="@string/faq_qn6_desc"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@drawable/faqbottomlineonlybackground"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textSize="16sp"
+                />
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

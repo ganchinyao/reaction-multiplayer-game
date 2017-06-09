@@ -1,0 +1,47 @@
+<resources>
+    <!-- 10" Tablet-->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+
+    <dimen name="quickplay_playerComment">38sp</dimen>
+    <dimen name="quickplay_playerComment34Players">32sp</dimen>
+    <dimen name="quickplay_playerScore">28sp</dimen>
+    <dimen name="quickplay_playerScore34Players">24sp</dimen>
+    <dimen name="quickplay_18sp">42sp</dimen>
+    <dimen name="quickplay_playerQuestionText">34sp</dimen>
+    <dimen name="quickplay_dialogBigText">46sp</dimen>
+    <dimen name="quickplay_dialogSmallText">44sp</dimen>
+    <dimen name="quickplay_margin5dp">11dp</dimen>
+    <dimen name="quickplay_margin2dp">5dp</dimen>
+    <dimen name="quickplay_margin3dp">7dp</dimen>
+    <dimen name="quickplay_10dp">18dp</dimen>
+    <dimen name="quickplay_15dp">35dp</dimen>
+    <dimen name="quickplay_20dp">44dp</dimen>
+    <dimen name="quickplay_25dp">48dp</dimen>
+    <dimen name="quickplay_30dp">55dp</dimen>
+    <dimen name="quickplay_50dp">102dp</dimen>
+    <dimen name="quickplay_100dp">162dp</dimen>
+
+    <dimen name="gameContent_UnitConversion_textSize">52sp</dimen>
+    <dimen name="gameContent_colorMatchWordsBigText">72sp</dimen>
+    <dimen name="gameContent_colorMatchWordsSmallText">60sp</dimen>
+    <dimen name="gameContent_fivecolorpanelCorrectWordSize">116sp</dimen>
+    <dimen name="gameContent_identifyinglanguageBigText">50sp</dimen>
+    <dimen name="gameContent_identifyinglanguageSmallText">42sp</dimen>
+    <dimen name="gameContent_oddandvowelTextSmall">34sp</dimen>
+    <dimen name="gameContent_oddandvowelTextMedium">50sp</dimen>
+    <dimen name="gameContent_oddandvowel_Velocity15">41dp</dimen>
+    <dimen name="gameContent_oddandvowel_Velocity20">49dp</dimen>
+    <dimen name="gameContent_oddandvowel_Velocity25">56dp</dimen>
+    <dimen name="gameContent_oddandvowel_Velocity35">62dp</dimen>
+    <dimen name="gameContent_touchingspamTrackerSize">40sp</dimen>
+    <dimen name="gameContent_illusionlength_additionalLength">100px</dimen>
+    <dimen name="gameContent_illusionlength_additionalBreath">30px</dimen>
+    <dimen name="gameContent_illusionlength_additionalDimension_ForWrongAns">50dp</dimen>
+    <dimen name="gameContent_solareclipse_glow_addsize">60px</dimen>
+    <dimen name="gameContent_solareclipse_shootingStarVelocity">300dp</dimen>
+
+    <dimen name="quickplay_popup_easymediumhardinsane_size">38sp</dimen>
+    <dimen name="quickplay_popup_1dpstroke">2dp</dimen>
+
+    <dimen name="winnerpage_returntomainmenu">32sp</dimen>
+</resources>

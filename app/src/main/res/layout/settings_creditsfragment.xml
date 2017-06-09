@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f0f0f0">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/creditpage_desc"
+        android:textSize="@dimen/_12ssp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_16sdp"
+        android:paddingRight="@dimen/_16sdp"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_10sdp"
+        android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/creditpage_image"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:adjustViewBounds="true"
+        />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/_16sdp"
+            android:text="@string/creditpage_image"
+            android:textSize="@dimen/_14ssp"
+            android:paddingRight="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:gravity="center_vertical"
+            />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/creditpage_vecteezy"
+            android:textSize="@dimen/_12ssp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/creditpage_vecteezy_desc"
+            android:textSize="@dimen/_10ssp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:autoLink="web"
+            />
+
+        <TextView
+            android:id="@+id/credit_subtlepatternlink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12ssp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/creditpage_imagesubtlepattern"
+            />
+
+        <TextView
+            android:id="@+id/credit_subtlepatternCCBYLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10ssp"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:linksClickable="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/creditpage_imagesubtlepattern_content"
+            android:textSize="@dimen/_10ssp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_7sdp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/creditpage_freepik"
+            android:textSize="@dimen/_12ssp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_8sdp"
+            />
+
+        <TextView
+            android:id="@+id/credit_freepikLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10ssp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/creditpage_music"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:adjustViewBounds="true"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/_16sdp"
+                android:text="@string/creditpage_sound"
+                android:textSize="@dimen/_14ssp"
+                android:paddingRight="@dimen/_16sdp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/credits_soundtext1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10ssp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+
+        <TextView
+            android:id="@+id/credits_soundtext2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12ssp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingRight="@dimen/_16sdp"
+            />
+
+        <TextView
+            android:id="@+id/credits_soundtext3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10ssp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/creditpage_library"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:adjustViewBounds="true"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/_16sdp"
+                android:text="@string/creditpage_library"
+                android:textSize="@dimen/_14ssp"
+                android:paddingRight="@dimen/_16sdp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/creditpage_librarydesc"
+            android:textSize="@dimen/_10ssp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:paddingLeft="@dimen/_16sdp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/creditpage_library_content"
+            android:textSize="@dimen/_10ssp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:paddingLeft="@dimen/_16sdp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12ssp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="@string/creditpage_end"
+            android:paddingBottom="@dimen/_20sdp"
+            />
+
+    </LinearLayout>
+</ScrollView>

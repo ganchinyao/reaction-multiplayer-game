@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/insanecustomlayout_rect"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:orientation="vertical">
+
+                <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/insane"
+                    android:textColor="#ECEFF1"
+                    android:textSize="@dimen/_24ssp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    />
+
+                    <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/insanemodedescription"
+                        android:textColor="#ECEFF1"
+                        android:textSize="@dimen/_16ssp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginLeft="@dimen/_18sdp"
+                        android:layout_marginRight="@dimen/_18sdp"
+                        android:gravity="center"
+                        android:maxLines="3"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/insanecustomlayout_shopButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_18sdp"
+                        android:layout_marginRight="@dimen/_18sdp"
+                        android:background="@drawable/editplayername_doneselector"
+                        android:clickable="true"
+                        >
+
+                        <!-- Set src programmatically and filter it to white -->
+                        <ImageView
+                            android:id="@+id/insanemode_shopicon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:padding="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:src="@drawable/homepage_shopicon"
+                            android:layout_alignParentRight="true"/>
+
+                        <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/insanemode_gotoshop"
+                            android:textColor="#FFFFFF"
+                            android:gravity="center"
+                            android:textSize="@dimen/_16ssp"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/insanecustomlayout_cancelbutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_marginLeft="@dimen/_18sdp"
+                        android:layout_marginRight="@dimen/_18sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:background="@drawable/editplayername_cancelselector"
+                        android:clickable="true"
+                        >
+                        <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/cancel_smallcaps"
+                            android:textColor="@color/primaryOrangeForMainPage"
+                            android:gravity="center"
+                            android:textSize="@dimen/_16ssp"
+                            android:textStyle="bold"
+                          />
+
+                    </RelativeLayout>
+            </LinearLayout>
+
+
+</RelativeLayout>

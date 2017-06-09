@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:id="@+id/exitCustomDialog_OverallContainer"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/exitcustomdialog_background"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:gravity="center"
+        >
+
+        <com.react.reactmultiplayergame.helper.AutoResizeTextView
+            android:id="@+id/exit_currentRound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_18sdp"
+            tools:text="Round 1/10"
+            android:textSize="@dimen/_18ssp"
+            android:gravity="center"
+            android:textColor="@color/primaryBlueForMainPage"
+            android:textStyle="bold"
+            />
+
+        <RelativeLayout
+            android:id="@+id/exit_returnToMainMenuButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_28sdp"
+            android:layout_marginRight="@dimen/_28sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/editplayername_cancelselector"
+            android:clickable="true"
+            >
+            <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="1"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/primaryOrangeForMainPage"
+                android:textStyle="bold"
+                android:text="@string/returntomainmenu_winnerpage"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/exit_goToNextRoundButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_28sdp"
+            android:layout_marginRight="@dimen/_28sdp"
+            android:background="@drawable/editplayername_doneselector"
+            android:clickable="true"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginBottom="@dimen/_22sdp"
+            >
+            <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="1"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:text="@string/gonextround"
+                android:gravity="center"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

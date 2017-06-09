@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- this will be fed into viewpager in quickplay_popup_playerprofile.xml
+It has been accounted for the actual size in the viewpager, hence it looks distorted in the
+preview, becos in actual size it is not in full screen size, but restrained to viewpager size
+-->
+
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_marginTopPercent="3%"
+    app:layout_marginBottomPercent="5%"
+    app:layout_marginLeftPercent="12.5%"
+    app:layout_marginRightPercent="12.5%"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+
+    <View
+        android:layout_width="match_parent"
+        app:layout_heightPercent= "0.5%"
+        android:background="@color/primaryBlueForMainPage"
+        />
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/editplayername_usericon"
+        app:layout_widthPercent= "20%"
+        app:layout_heightPercent= "50%"
+        android:gravity="center">
+
+        <ImageView
+            app:layout_widthPercent= "70%"
+            app:layout_aspectRatio="100%"
+            android:src="@drawable/editplayername_name"
+            />
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/editplayername_edittextContainer"
+        android:layout_width="match_parent"
+        app:layout_heightPercent= "50%"
+        android:gravity="center"
+        app:layout_marginLeftPercent="4.5%"
+        android:layout_toRightOf="@id/editplayername_usericon">
+
+        <TextView
+            android:id="@+id/editplayername_customname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customname"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/primaryBlueForMainPage"
+            android:fontFamily="sans-serif-condensed"
+            app:layout_marginTopPercent="5%"
+            />
+
+
+        <EditText
+            android:id="@+id/editplayername_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:hint="@string/enterplayer1"
+            android:textColorHint="#ececec"
+            android:textColor="#FFFFFF"
+            android:inputType="textNoSuggestions"
+            android:maxLines="2"
+            android:background="#90005c83"
+            android:padding="@dimen/_5sdp"
+            android:textSize="@dimen/_15ssp"
+            android:layout_below="@id/editplayername_customname"
+            app:layout_marginTopPercent="2%"
+            />
+
+        <com.react.reactmultiplayergame.helper.AutoResizeTextView
+            android:id="@+id/editplayername_resetButton"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"
+            android:maxLines="1"
+            android:textSize="@dimen/_13ssp"
+            android:gravity="center"
+            android:textColor="@color/primaryOrangeForMainPage"
+            android:background="@drawable/editplayername_cancelselector"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/editplayername_edittext"/>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <View
+        android:id="@+id/editplayername_2ndline"
+        android:layout_width="match_parent"
+        app:layout_heightPercent= "0.5%"
+        android:background="@color/primaryBlueForMainPage"
+        android:layout_below="@id/editplayername_usericon"
+        />
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/editplayername_tagname"
+        app:layout_widthPercent= "20%"
+        app:layout_heightPercent= "40%"
+        android:layout_below="@id/editplayername_2ndline">
+
+        <com.react.reactmultiplayergame.helper.AutoResizeTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="1"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/primaryBlueForMainPage"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/colortag"
+            android:gravity="center"
+            />
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        app:layout_heightPercent= "40%"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@id/editplayername_tagname"
+        android:layout_below="@id/editplayername_2ndline"
+        >
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/editplayername_tophalfTags"
+            android:layout_width="match_parent"
+            app:layout_heightPercent= "50%"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            >
+
+            <!--<ImageView-->
+                <!--android:id="@+id/editplayername_colortag_yellow"-->
+                <!--app:layout_widthPercent= "20%"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:src="@drawable/editplayername_tagcircleselector"-->
+                <!--android:clickable="true"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--/>-->
+
+
+
+            <!--<ImageView-->
+                <!--android:id="@+id/editplayername_colortag_orange"-->
+                <!--app:layout_widthPercent= "20%"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:src="@drawable/editplayername_tagcircleselector"-->
+                <!--android:clickable="true"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:layout_toRightOf="@id/editplayername_colortag_yellow"/>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/editplayername_colortag_pink"-->
+                <!--app:layout_widthPercent= "20%"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:src="@drawable/editplayername_tagcircleselector"-->
+                <!--android:clickable="true"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:layout_toRightOf="@id/editplayername_colortag_orange"/>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/editplayername_colortag_red"-->
+                <!--app:layout_widthPercent= "20%"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:src="@drawable/editplayername_tagcircleselector"-->
+                <!--android:clickable="true"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:layout_toRightOf="@id/editplayername_colortag_pink"/>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/editplayername_colortag_white"-->
+                <!--app:layout_widthPercent= "20%"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:src="@drawable/editplayername_tagcircleselector"-->
+                <!--android:clickable="true"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:layout_toRightOf="@id/editplayername_colortag_red"/>-->
+        </android.support.percent.PercentRelativeLayout>
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/editplayername_bottomhalfTags"
+            android:layout_width="match_parent"
+            app:layout_heightPercent= "50%"
+            android:layout_below="@+id/editplayername_tophalfTags"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            >
+
+            <!--<ImageView-->
+                <!--android:id="@+id/editplayername_colortag_cyan"-->
+                <!--app:layout_widthPercent= "20%"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:src="@drawable/editplayername_tagcircleselector"-->
+                <!--android:clickable="true"-->
+                <!--android:adjustViewBounds="true" />-->
+
+
+
+            <!--<ImageView-->
+                <!--android:id="@+id/editplayername_colortag_green"-->
+                <!--app:layout_widthPercent= "20%"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:src="@drawable/editplayername_tagcircleselector"-->
+                <!--android:clickable="true"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:layout_toRightOf="@id/editplayername_colortag_cyan"/>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/editplayername_colortag_purple"-->
+                <!--app:layout_widthPercent= "20%"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:src="@drawable/editplayername_tagcircleselector"-->
+                <!--android:clickable="true"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:layout_toRightOf="@id/editplayername_colortag_green"/>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/editplayername_colortag_brown"-->
+                <!--app:layout_widthPercent= "20%"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:src="@drawable/editplayername_tagcircleselector"-->
+                <!--android:clickable="true"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:layout_toRightOf="@id/editplayername_colortag_purple"/>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/editplayername_colortag_black"-->
+                <!--app:layout_widthPercent= "20%"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:src="@drawable/editplayername_tagcircleselector"-->
+                <!--android:clickable="true"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:layout_toRightOf="@id/editplayername_colortag_brown"/>-->
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/editplayername_tagname">
+
+        <com.react.reactmultiplayergame.helper.AutoResizeTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="1"
+            android:text="@string/tagnote"
+            android:gravity="center"
+            android:textColor="@color/primaryBlueForMainPage"
+            android:textSize="@dimen/_12ssp"
+            />
+    </android.support.percent.PercentRelativeLayout>
+
+
+
+
+</android.support.percent.PercentRelativeLayout>

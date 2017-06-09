@@ -1,0 +1,627 @@
+<resources>
+    <string name="app_name">React! Multiplayer Game</string>
+
+    <string name="google_play" translatable="false">https://play.google.com/store/apps/details?id=</string>
+    <string name="sharethisapptoast">Share this app with your friends!</string>
+
+
+    <!-- home page words-->
+    <string name="quick_play">Quick Play</string>
+    <string name="custom_game">Custom Game</string>
+    <string name="shop">Shop</string>
+    <string name="shop_caps">SHOP</string>
+    <string name="rate_this_app">Rate this App</string>
+
+    <!-- home page Pop Ups -->
+    <string name="choosedifficulty">CHOOSE DIFFICULTY</string>
+    <string name="easy">EASY</string>
+    <string name="medium">MEDIUM</string>
+    <string name="hard">HARD</string>
+    <string name="insane">INSANE</string>
+    <string name="number_of_players">NO. OF PLAYERS</string>
+    <string name="edit_names">Edit Names</string>
+    <string name="start">START</string>
+    <string name="playerprofile">PLAYERS\' PROFILES</string>
+    <string name="player_1">PLAYER 1</string>
+    <string name="player_2">PLAYER 2</string>
+    <string name="player_3">PLAYER 3</string>
+    <string name="player_4">PLAYER 4</string>
+    <string name="enterplayer1">Player One</string>
+    <string name="enterplayer2">Player Two</string>
+    <string name="enterplayer3">Player Three</string>
+    <string name="enterplayer4">Player Four</string>
+    <string name="colortag">TAG:</string>
+    <string name="done">DONE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="cancel_smallcaps">Cancel</string>
+    <string name="customname">Custom Name</string>
+    <string name="tagnote">Note: Tag is the color of the Player\'s Button</string>
+    <string name="reset">Reset</string>
+    <string name="insanemodedescription">Insane Mode is only available on Purchase. Purchase Insane Mode Now?</string>
+    <string name="insanemode_gotoshop">Go to Shop</string>
+    <string name="customgame_caps">CUSTOM GAME</string>
+    <string name="selectgamemodes">Select Game Modes</string>
+    <string name="selectall">Select All</string>
+    <string name="selectnone">Select None</string>
+    <string name="randomizeorder">Randomize Order</string>
+    <string name="customgame0gamemode">Select at least 1 Game Mode!</string>
+    <string name="customgame_somethingwrong">Unable to start Custom Game. Select your Game Modes again.</string>
+
+    <!-- Shop -->
+    <string name="restorepurchase">Restore your purchase</string>
+    <string name="removeads">Remove Ads</string>
+    <string name="insaneMode">INSANE Mode</string>
+    <string name="nomoreads">No More Ads!</string>
+    <string name="findoutmore">Find out more</string>
+    <string name="buynow">Buy Now!</string>
+    <string name="soldout">Sold Out!</string>
+    <string name="successfullypurchased">Successfully Purchased!</string>
+    <string name="successfullyrestored">Successfully Restored!</string>
+    <string name="errorpurchased">An error occurred. Please try again later.</string>
+    <string name="errorpurchased_noconnection">Unable to fetch price. Please check your internet connection.</string>
+    <string name="restorepurchasednointernet">Unable to connect to Google Play Store. Please check your connection and try again.</string>
+    <string name="restorepurchasednopurchase">Your current Google Play Store account has no purchases.</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="gameplaysettings">Game Play Settings</string>
+    <string name="scorepercorrectans">Score per Correct Answer</string>
+    <string name="scoreperwrongans">Score per Wrong Answer</string>
+    <string name="current">Current: </string>
+    <string name="roundpergame">Rounds per Game</string>
+    <string name="roundpergame_message">(Only applies to Quick Play)</string>
+    <string name="callnextgameround">Call next Game Round</string>
+    <string name="callnextgameround_dialogtitle">Call next round after&#8230;</string>
+    <string name="callnextgameround_desc">How long before next Game Round is called</string>
+    <string name="correctanswer">correct answer</string>
+    <string name="correctanswers">correct answers</string>
+    <string name="answerdelaytime">Answer Delay Time</string>
+    <string name="answerdelaytime_desc">How long the answers are flashed after a player pressed on the button</string>
+    <string name="react">React!</string>
+    <string name="developersletter">Developer\'s Letter</string>
+    <string name="developersletter_desc">Message from the Developer</string>
+    <string name="policy">Policy</string>
+    <string name="policy_desc">Privacy Policy and Parents Guide</string>
+    <string name="helpustranslate">Help us Translate!</string>
+    <string name="helpustranslate_desc">Translate this app to other languages</string>
+    <string name="sendusfeedback">Send us Feedback</string>
+    <string name="sendusfeedback_desc">We would love to hear from you!</string>
+    <string name="about">About</string>
+    <string name="faq">FAQ</string>
+    <string name="faq_desc">Frequently Asked Questions</string>
+    <string name="credits">Credits</string>
+    <string name="credits_desc">The contributors for this app</string>
+    <string name="Version">Version</string>
+    <string name="second">sec</string>
+    <string name="credits_contactus">Contact Us</string>
+    <string name="sendemailvia">Send email via</string>
+
+
+    <string name="faq_qn1">Is this game available on iOS?</string>
+    <string name="faq_qn1_desc">This game is currently only available on Android. We have no plan for an iOS release yet.</string>
+    <string name="faq_qn2">How long do I have access to the Remove Ads and Insane Mode features if I were to purchase them?</string>
+    <string name="faq_qn2_desc">You will have a lifetime access. As the purchase transaction is handled by Google, the purchase is tied to your Google Play account.
+            As long as you use the same Google account, you can click on \"Restore your Purchase\" in the Shop page, and have your previous purchase restored.</string>
+    <string name="faq_qn3">I have purchased the Remove Ads or Insane Mode feature, but it was not reflected.</string>
+    <string name="faq_qn3_desc">This can happen if you delete the game and reinstall it, or install it on another device. It may also happen if you manually clear this app\'s data
+            from your phone\'s application setting page. In any case, you can always click on \"Restore your purchase\" and have your previous purchase restored, as long as
+            you are using the same Google account. If this does not work, try to reinstall the app and click on \"Restore your purchase\" again.</string>
+    <string name="faq_qn4">Is this game available in other languages?</string>
+    <string name="faq_qn4_desc">This game is currently only available in English. However, we do have plans to localize the game to other languages.</string>
+    <string name="faq_qn5">Can I increase or decrease the font size in this game?</string>
+    <string name="faq_qn5_desc">You are not able to increase or decrease the font size directly from the game. However, you can go to your default phone\'s settings page, and
+        increase or decrease the font size there. The font size in this game will then be reflected accordingly.</string>
+    <string name="faq_qn6">Can I choose what Game Mode to play in Quick Play?</string>
+    <string name="faq_qn6_desc">For each round, Quick Play randomly choose a Game Mode from all the available Game Modes. You can however choose which Game Mode to play
+            in Custom Game.</string>
+    <string name="privacypolicy">Privacy Policy</string>
+    <string name="privacypolicy_text1">Your privacy is important to us!</string>
+    <string name="privacypolicy_text2">Personal Information</string>
+    <string name="privacypolicy_text3">We do not collect any personal information that could identify you, and hence, we do not disclose any of your personal information.
+        Exception includes when you contact us by email. Please read \'Information you provide\' section below.</string>
+    <string name="privacypolicy_text4">Cookies</string>
+    <string name="privacypolicy_text5">We do not use cookies ourselves. Hence, no information on your part is stored by us. However, third party Ads Network may use cookies
+        to deliver interest-based Ads to you.</string>
+    <string name="privacypolicy_text6">Other Information</string>
+    <string name="privacypolicy_text7">We use Firebase Analytics by Google, which may collect information that may include, but not limited to,
+        user\'s date of install, frequency of use, functionality of app used, country, etc, for used in the following circumstances:\n\n
+\t\t 1) To have a better understanding of user\'s demographic\n\n
+\t\t 2) To better enhance the current product by understanding user\'s origin and functionality of app used\n\n
+        We use Fabric Crashlytics by Google to collect Crash Reports from users when the app crashed. The Crash Report sent to us may include your device
+        model, Android Version, and the part of the code where the crash occurs. No part of this Crash Reports can directly identify an individual personally.</string>
+    <string name="privacypolicy_text8">Advertisement</string>
+    <string name="privacypolicy_text9">We show the Ads provided by global network partners such as \'Google Admob\' and \'Facebook Audience Network\'. \n\nThe
+        third party providers may collect information from your part in which we have no control over.
+        Information may include but not limited to your gender, country of origin, age, likes and dislikes etc, so as to serve you more relevant ads.</string>
+    <string name="privacypolicy_text10">Information you provide</string>
+    <string name="privacypolicy_text11">If you contact us for support or to give feedback,
+        we may obtain and maintain any information you choose to provide, including your name, email addresses, attachment (if any),
+        contact info as well as information about your mobile devices or other digital devices. We will use this information only to improve our product
+        as well as to address the issue that you mentioned, and not share it with third parties unless required by law.
+        \n\nBy emailing us, you agree that you are above the age of 13 and consent to us storing your email records in our database. In the event you are below the age
+        of 18, you agree that the email you sent to us are vetted and given permission by your legal parent or guardian, and that they understood that email and information
+        you provided may be stored in our database for reference purposes.</string>
+    <string name="parentsguide">Parents Guide</string>
+    <string name="parentsguide_text1">We require all users who downloaded and use this app to be above the age of 13. This is to be in line with COPPA and policies from third
+        party network such as Facebook Audience Network and Google Admob when serving Ads, as well as Firebase Analytics from Google which may collect information from users.</string>
+    <string name="parentsguide_text2">How can I manage or turn off In-app-purchase?</string>
+    <string name="parentsguide_text3">This game is free to download and play, but contains two In-app-purchases:\n\n\t\t-Remove Ads\n\t\t-Unlock Insane Mode\n\nThese
+        purchases are never required to play the game, but can be used to enhance the gameplay. In-app-purchase are paid for with real money, and are always
+        labeled as such. You can easily manage the ability to make in-app-purchase, adjust password protection settings, or disable in-app-purchase entirely. To do so,
+        open Google Playstore on your device, and go to \'User controls\' section in the Playstore Settings page. This can prevent your child from making unintentional in-app-purchase.</string>
+    <string name="parentsguide_text4">Who processes the In-app-purchase transactions?</string>
+    <string name="parentsguide_text5">We do not handle the In-app-purchase transactions. The payment transactions themselves are completed through Google Play via
+        your personal email address associated with that account. Receipts for these transactions are emailed to you by Google.\n\nTherefore, we do not have
+        access to any of your personal and credit card information, as the transaction are completed through Google Play.</string>
+    <string name="parentsguide_text6">Need help?</string>
+    <string name="parentsguide_text7">We are here to help! You can read through our FAQ page which answers some of the frequently asked questions. For
+        further assistance, you can contact us at contact@ninebitstudio.com. We will be happy to hear from you!</string>
+    <string name="email">feedback@ninebitstudio.com</string>
+    <string name="emailcontactus">contact@ninebitstudio.com</string>
+    <string name="feedback">Feedback</string>
+    <string name="contact">Contact</string>
+
+    <string name="developersletter_text1">\nDear React! users\n\nGreetings! It is an honor for us to talk to
+        you through this letter. We would like to share more insights with you and everything you need to know about
+        this app.\n\nThis app was conceived and developed by a few of us from ground up. We have wanted a game that offers a multi-player experience so that we can play with our friends, for giggles.
+        At the same time, the game should also possess beautiful graphics and sound effects for maximum satisfaction. We also wanted a game whereby only 1 device is necessary to play with all our
+        friends locally, without the need for wi-fi or bluetooth connection. As we searched the available multi-player game titles on Playstore, we realized that there are little
+        selections available which meet our criteria. Therefore,
+        we decided to create one ourselves, and make it available to everyone globally. To ensure that users are not able to memorize the quiz of
+        our games and hence having an advantage over their friends, the majority of our Game Modes utilize randomness. This ensures
+        that every possible combinations and permutations are pulled off. Therefore, no players would have a huge advantage by playing this game for a longer time. This makes the game more
+        fair, and in return, more fun. \n\nAs a small team, we are responsible for tackling all the necessary aspects of an app such as code, design, and sounds. In doing so,
+        we created some original content in our studio itself. At the same time, we also utilized beautiful free-for-commercial-use images and sounds that were found online, honoring
+        all their attribution requirements. These attributions can be found inside the \'Credits\' page of this app.\nFor
+        some images and sounds, we acquired the necessary licenses to use them in our app without having to attribute back to the original authors. We take copyright infringement seriously,
+        and in no part of this app do we use resources that infringe upon the rights of their respective holders.\n\nAs we code this app up from scratch, we also utilize several
+        free-to-use libraries from other developers. We would like to take this opportunity to give them a shout out for their wonderful works, which helped to shorten the development time frame
+        for many developers out there.\n\nAs you start to use this app, you might come across errors which forced this app to shut down. Such errors are often unprecedented and we deeply
+        apologized for the inconvenience. We strive to make your experience as pleasant as possible. While we did heavy testing for the app before launching, the heavy fragmentation of Android devices
+        means that it is not feasible for us to test out on every single available Android devices in the market. Hence, some errors might be only native to certain devices and we had not
+        experienced it during our testing phase. However, we assure you that the crash reports that you sent to us will be analyzed in detail and we will fix these potential crashes in subsequent
+        updates.\n\nThe next thing that we would like to talk about is advertisements and in-app-purchase. While we strive to make this app available freely to all our users, advertisements
+        are an essential reason we are able to do so. We have put advertisements only at 3 places, namely the home page, the \'Return to main menu\' pop up, and one full screen ads at the victory
+        page. We aimed to put ads in such a way that it is non-infringing on your game play, and allow our users to have a pleasant experience playing our game. It is important for us to ensure that
+        Ads are only delivered in the most appropriate and engaging way. We understand that some of you may prefer to use the app without Ads. Hence, we have added a feature
+        that allows you to make a one-time purchase which removes the Ads entirely from this app. As the in-app-purchase transaction is handled by Google, which in turn is tied to your Google Account,
+        you are able to enjoy the feature for a lifetime with a single purchase, so long as you used the same Google Account. The \'Insane Mode\' offers a more challenging Game Play,
+        featuring a higher level of difficulty. This mode is particularly targeted at users who want a faster-paced game play, delving into more challenging situations. It is not available
+        for free, and require a one time purchase. We hope that for users who do not wish to spend their hard-earned money on this app, the Easy, Medium, and Hard modes can offer you
+        sufficient joys and satisfaction.\n\nLastly, we would like to thank You, our users, who had downloaded this app and supported us along the way. We hope you have a fun time playing with your friends.
+        If you like our app, do remember to give us a Rate in the Playstore, and recommend it to more of your friends! We thank you for your time in reading this letter! Have fun, and giggle on! :)
+        \n\nFrom your friendly developers at Ninebit Studio</string>
+
+
+
+    <!-- Credit Page-->
+    <string name="creditpage_end">End</string>
+    <string name="creditpage_desc">\nThis page serves to provide credits to all the relevant parties who have contributed to this app.</string>
+    <string name="creditpage_image">Image Credits</string>
+    <string name="creditpage_vecteezy">1) Ribbon banner:</string>
+    <string name="creditpage_vecteezy_desc"> Graphics by: <a href="https://www.vecteezy.com">www.Vecteezy.com</a>\n by happymeluv</string>
+    <!-- must use the encoding &lt;a instead of <a -->
+    <string name="creditpage_imagesubtlepattern">2)Subtle Patterns Backgrounds:</string>
+    <string name="creditpage_imagesubtlepattern_desc">The following images are licensed under &lt;a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0&lt;/a>
+        from &lt;a href="https://www.toptal.com/designers/subtlepatterns">Subtle Patterns&lt;/a>,
+        and some changes may have been made to the original images:</string>
+    <string name="creditpage_imagesubtlepattern_content">Stardust - by Atle Mo
+        \nStraws - by Pavel
+        \nNorwegian Rose - by Fredrik Scheide 
+        \nWeave - by Catherine
+        \nLined Paper - by Are Sundnes
+        \n3px Tile - by Gre3g
+        \nRavenna - by Sentel
+        \nLow Contrast Linen - by Jordan Pittman
+        \nContemporary China - by Adam Charlts
+        \nRestaurant - by Andrijana Jarnjak
+        \nMoulin - by Venam
+        \nps_neutral - by Gluszczenko
+        \nbrushed_alu - by Tim Ward
+        \nBatthern - by Factorio.us Collective
+        \nInspiration Geometry - by Welsley</string>
+    <string name="creditpage_freepik">3) Background:</string>
+    <string name="creditpage_freepikLink">&lt;a href="http://www.freepik.com/free-photos-vectors/background">Background vector created by Freepik&lt;/a></string>
+    <string name="creditpage_sound">Sound Credits</string>
+    <string name="creditpage_sound_text1">\"1 Person Cheering\" Jeff Rifkin
+        &lt;br/>License: &lt;a href="https://creativecommons.org/licenses/by/3.0/">Attribution 3.0&lt;/a>
+         &lt;br/>&lt;a href="http://soundbible.com/2103-1-Person-Cheering.html">http://soundbible.com/2103-1-Person-Cheering.html&lt;/a>
+
+         &lt;br/> &lt;br/>"Bomb Sound\" Mike Koenig
+         &lt;br/>License: &lt;a href="https://creativecommons.org/licenses/by/3.0/">Attribution 3.0&lt;/a>
+         &lt;br/>&lt;a href="http://soundbible.com/1234-Bomb.html">http://soundbible.com/1234-Bomb.html</string>&lt;/a>
+    <string name="creditpage_sound_text2">The following sounds are all products of Kevin MacLeod from
+        &lt;a href="https://incompetech.com">incompetech.com&lt;/a>, and distributed via  &lt;a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0&lt;/a></string>
+
+    <string name="creditpage_sound_text3">\"Split In Synapse\" Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+ &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+ &lt;br/> &lt;br/>\"Tenebrous Brothers Carnival - Act Two\" Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+  &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+ &lt;br/> &lt;br/>Kool Kats Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+ &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+ &lt;br/> &lt;br/>Carefree Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+ &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+ &lt;br/> &lt;br/>Hyperfun Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+ &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+ &lt;br/> &lt;br/>The Show Must Be Go Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+ &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+ &lt;br/> &lt;br/>Poppers and Prosecco Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+ &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+ &lt;br/> &lt;br/>\"Hidden Wonders\" Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+ &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+ &lt;br/> &lt;br/>\"On My Way\" Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+  &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+ &lt;br/> &lt;br/>\"Mystic Force\" Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+ &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+
+ &lt;br/> &lt;br/>\"Wagon Wheel\" Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+ &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+ &lt;br/> &lt;br/>\"Lively Lumpsucker\" Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+ &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+ &lt;br/> &lt;br/>\"Universal\" Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+ &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+ &lt;br/> &lt;br/>\"Phantom from Space\" Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+ &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+ &lt;br/> &lt;br/>\"Disquiet\" Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+ &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+ &lt;br/> &lt;br/>\"Crowd Hammer\" Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+ &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+
+ &lt;br/> &lt;br/>\"Groundwork\" Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+ &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+ &lt;br/> &lt;br/>\"Rynos Theme\" Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+ &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+ &lt;br/> &lt;br/>\"Thinking Music\" Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+ &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+ &lt;br/> &lt;br/>\"Fretless\" Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+ &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+ &lt;br/> &lt;br/>Sneaky Snitch Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+ &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+ &lt;br/> &lt;br/>\"Galway\" Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+ &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+ &lt;br/> &lt;br/>\"Laser Groove\" Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+ &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+ &lt;br/> &lt;br/>\"Doobly Doo\" Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+ &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+ &lt;br/> &lt;br/>Monkeys Spinning Monkeys Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+ &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+ &lt;br/> &lt;br/>\"Eternity\" Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+ &lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+ &lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+
+         &lt;br/> &lt;br/>The Complex Kevin MacLeod &lt;a href="https://incompetech.com">(incompetech.com)&lt;/a>
+&lt;br/>Licensed under Creative Commons: By Attribution 3.0 License
+&lt;br/>&lt;a href="https://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/&lt;/a>
+</string>
+    <string name="creditpage_library">Open-Source Library</string>
+    <string name="creditpage_librarydesc">The following open source libraries are used in the development of this app. We thank the open source community for all of their contributions.</string>
+    <string name="creditpage_library_content">jinatonic/confetti
+        \n====================
+        \nCopyright 2016 Robinhood Markets, Inc.
+\n
+\nLicensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+\n
+ \n  http://www.apache.org/licenses/LICENSE-2.0
+\n
+\nUnless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+        \n
+        \nLink: https://github.com/jinatonic/confetti
+
+    \n\n\n\n
+    grantland/android-autofittextview
+    \n====================
+        \nCopyright 2014 Grantland Chew
+\n
+\nLicensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+\n
+ \n  http://www.apache.org/licenses/LICENSE-2.0
+\n
+\nUnless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+           \n
+        \nLink: https://github.com/grantland/android-autofittextview
+
+        \n\n\n\n
+        cachapa/ExpandableLayout
+        \n====================
+       \n Copyright 2016 Daniel Cachapa.
+\n
+\nLicensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+\n
+  \n http://www.apache.org/licenses/LICENSE-2.0
+\n
+\nUnless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+          \n
+        \nLink: https://github.com/cachapa/ExpandableLayout
+
+        \n\n\n\n
+        intuit/sdp
+        \n====================
+       \n The MIT License (MIT)
+\n
+\nCopyright (c) 2013 - 2015 Intuit Inc.
+\n
+\nPermission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+\n
+\nThe above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+\n
+\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+        \n
+        \nLink: https://github.com/intuit/sdp
+
+        \n\n\n\n
+        intuit/ssp
+        \n====================
+           \n The MIT License (MIT)
+\n
+\nCopyright (c) 2013 - 2015 Intuit Inc.
+\n
+\nPermission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+\n
+\nThe above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+\n
+\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+        \n
+        \nLink: https://github.com/intuit/ssp
+
+
+
+
+
+
+
+
+    </string>
+
+
+    <!-- Find out more page -->
+    <string name="aboutinsanemode">About Insane Mode</string>
+    <string name="aboutinsanemode_topdesc">The following describes each Game Mode with Insane Mode selected, and compared it with the Hard Mode.
+        This allows you to make a more informed choice before purchasing the Insane Mode.</string>
+    <string name="findoutmore_animalkingdom_hard">Hard: Identify 1 animal, 1 sec Timer</string>
+    <string name="findoutmore_animalkingdom_insane">Insane: Identify 2 animals, 1 sec Timer</string>
+    <string name="findoutmore_collidingcircle_hard">Hard: Larger Circle</string>
+    <string name="findoutmore_collidingcircle_insane">Insane: Smaller Circle, faster rotating speed</string>
+    <string name="findoutmore_colormixer_hard">Hard: 512 combinations, 2 sec Timer</string>
+    <string name="findoutmore_colormixer_insane">Insane: 990 combinations, 1 sec Timer</string>
+    <string name="findoutmore_coloredscreen_hard">Hard: 7 colors</string>
+    <string name="findoutmore_coloredscreen_insane">Insane: 12 colors, up to 1 sec faster changing speed</string>
+    <string name="findoutmore_fivecolorpanel_hard">Hard: 8 stripes</string>
+    <string name="findoutmore_fivecolorpanel_insane">Insane: 11 stripes</string>
+    <string name="findoutmore_countryandcontinent_hard">Hard: 1.5 sec Timer</string>
+    <string name="findoutmore_countryandcontinent_insane">Insane: 1 sec Timer</string>
+    <string name="findoutmore_eclipse_hard">Hard: 1&#8211;6 sec eclipse completion time</string>
+    <string name="findoutmore_eclipse_insane">Insane: 1&#8211;8 sec eclipse completion time</string>
+    <string name="findoutmore_mathequation_hard">Hard: Numbers up to 300</string>
+    <string name="findoutmore_mathequation_insane">Insane: Numbers up to 1000</string>
+    <string name="findoutmore_foodparadise_hard">Hard: Identify 1 picture</string>
+    <string name="findoutmore_foodparadise_insane">Insane: Identify 2 pictures</string>
+    <string name="findoutmore_identifylanguage_hard">Hard: 1.5 sec Timer</string>
+    <string name="findoutmore_identifylanguage_insane">Insane: 1 sec Timer</string>
+    <string name="findoutmore_illusioncircle_hard">Hard: 1.5 sec Timer</string>
+    <string name="findoutmore_illusioncircle_insane">Insane: 1 sec Timer</string>
+    <string name="findoutmore_illusiongear_hard">Hard: 6 gears</string>
+    <string name="findoutmore_illusiongear_insane">Insane: 8 gears, rotate 25% faster</string>
+    <string name="findoutmore_illusionrect_hard">Hard: Rectangles static in position</string>
+    <string name="findoutmore_illusionrect_insane">Insane: Rectangles constantly rotating around</string>
+    <string name="findoutmore_mandn_hard">Hard: Grid of 5 x 6</string>
+    <string name="findoutmore_mandn_insane">Insane: Grid of 6 x 8</string>
+    <string name="findoutmore_perfectmatch_hard">Hard: 1.5 sec Timer</string>
+    <string name="findoutmore_perfectmatch_insane">Insane: 1 sec Timer</string>
+    <string name="findoutmore_colormatchwords_hard">Hard: Match 1 word</string>
+    <string name="findoutmore_colormatchwords_insane">Insane: Match 2 words, 21 additional colors</string>
+    <string name="findoutmore_gradientorb_hard">Hard: 6 orbs</string>
+    <string name="findoutmore_gradientorb_insane">Insane: 8 orbs, up to 50% faster moving speed</string>
+    <string name="findoutmore_neonarrow_hard">Hard: 6 arrows, 1.5 sec Timer</string>
+    <string name="findoutmore_neonarrow_insane">Insane: 8 arrows, 1 sec Timer, 3 additional Colors</string>
+    <string name="findoutmore_oandx_hard">Hard: Grid of 5 x 6</string>
+    <string name="findoutmore_oandx_insane">Insane: Grid of 6 x 8</string>
+    <string name="findoutmore_oddandvowel_hard">Hard: Number up to 270, move only</string>
+    <string name="findoutmore_oddandvowel_insane">Insane: Number up to 999, move and rotate</string>
+    <string name="findoutmore_smilingface_hard">Hard: 2 faces</string>
+    <string name="findoutmore_smilingface_insane">Insane: 4 faces, up to 25% faster changing speed</string>
+    <string name="findoutmore_touchingspam_hard">Hard: move only</string>
+    <string name="findoutmore_touchingspam_insane">Insane: move and rotate</string>
+    <string name="findoutmore_unitconversion_hard">Hard: starting number is an integer only</string>
+    <string name="findoutmore_unitconversion_insane">Insane: starting number includes decimal</string>
+    <string name="findoutmore_fiveyellowcircles_hard">Hard: Grid of 5 x 6</string>
+    <string name="findoutmore_fiveyellowcircles_insane">Insane: Grid of 6 x 8</string>
+
+    <!-- How to play -->
+    <string name="howtoplay">How to play</string>
+    <string name="howtoplay_text1">Select either Quick Play or Custom Game</string>
+    <string name="howtoplay_text23">Select a Level Difficulty and Number of Players currently playing</string>
+    <string name="howtoplay_text4">Optionally change the Player\'s name and Color tag</string>
+    <string name="howtoplay_text5_1">1) This is the game content\n2) This is the current Question\n3) This is your current Score
+        \n4) This is the button for Player Two to tap\n5) This is the button for Player One to tap</string>
+    <string name="objective">Objective:</string>
+    <string name="objective_desc">Test your reaction skill with your friends by tapping only when the question is correct!
+        \n\nGet as many points as possible to win!</string>
+    <string name="objective_desc2">Challenge your friends today!</string>
+
+    <!-- QuickPlay in Game Constant-->
+    <string name="player1">Player One</string>
+    <string name="player2">Player Two</string>
+    <string name="player3">Player Three</string>
+    <string name="player4">Player Four</string>
+
+    <!-- Game Question -->
+    <string name="hitwhencorrect">Tap when the equation is Correct</string>
+    <string name="spamhit">SPAM! Tap as many times as possible!</string>
+    <string name="circlecollide">Tap when both circles collide!</string>
+    <string name="fivecolorspanel1">Tap when there are at least</string>
+    <string name="fivecolorspanel2">unique colors</string>
+    <string name="mixingcolors">Tap if the resultant color is correct!</string>
+    <string name="mixingcolors_correctanswer">Correct Answer</string>
+    <string name="oddandvowel">Number is Odd and Letter is Vowel?</string>
+    <string name="colormatchwords">Tap when Color matches the Name!</string>
+    <string name="colormatchwords_insane">Tap when both Colors match the Names!</string>
+    <string name="animalkingdom">Tap when the Animal\'s name is correct</string>
+    <string name="animalkingdom_insane">Both the Animals\' names are correct?</string>
+    <string name="identifyinglanguages">Tap when the Language is correct</string>
+    <string name="unitconversion">Tap if the Conversion is correct</string>
+    <string name="illusionrectangle">Both Rectangles Are Equal In Size?</string>
+    <string name="solareclipse">Tap when there is a Full Eclipse</string>
+    <string name="neonarrows">All Arrows Point In Different Directions?</string>
+    <string name="mandn">Tap when you see the letter \'N\'</string>
+    <string name="countryandcontinent">The Country matches the Continent?</string>
+    <string name="foodparadise">Tap when the Food is correct</string>
+    <string name="foodparadise_insane">Tap when both Food are correct</string>
+    <string name="smilingface_easymedium">Tap when you see a Smiling Face</string>
+    <string name="smilingface_hard">Tap when there are 2 Smiling Faces</string>
+    <string name="smilingface_Insane">Tap when there are 4 Smiling Faces</string>
+    <string name="oandx">Tap when there are more \'O\' than \'X\'</string>
+    <string name="perfectmatch">Does The Shapes Match Perfectly?</string>
+    <string name="gradientorb">Is there a Multi-colored Orb?</string>
+    <string name="illusioncircle">All 3 circles are equal in size?</string>
+    <string name="illusiongear">All the Gears turn in same Direction?</string>
+    <string name="fiveyellowcircle">Tap when there are at least 5 yellow circles</string>
+
+    <!-- Different option for ScreenColor.java -->
+    <string name="colorscreen_white">Tap when the screen turns <b>White</b>!</string>
+    <string name="colorscreen_yellow">Tap when the screen turns <b>Yellow</b>!</string>
+    <string name="colorscreen_cyan">Tap when the screen turns <b>Cyan</b>!</string>
+    <string name="colorscreen_green">Tap when the screen turns <b>Green</b>!</string>
+    <string name="colorscreen_blue">Tap when the screen turns <b>Blue</b>!</string>
+    <string name="colorscreen_black">Tap when the screen turns <b>Black</b>!</string>
+    <string name="colorscreen_red">Tap when the screen turns <b>Red</b>!</string>
+    <string name="colorscreen_purple">Tap when the screen turns <b>Purple</b>!</string>
+    <string name="colorscreen_pink">Tap when the screen turns <b>Pink</b>!</string>
+    <string name="colorscreen_orange">Tap when the screen turns <b>Orange</b>!</string>
+    <string name="colorscreen_maroon">Tap when the screen turns <b>Maroon</b>!</string>
+    <string name="colorscreen_gray">Tap when the screen turns <b>Gray</b>!</string>
+
+
+    <string name="gamedraw">DRAW!</string>
+    <string name="round">Round</string>
+    <string name="gamecompleted">Game Completed!</string>
+    <string name="of">of</string>
+    <string name="returntomainmenu">Return to Main Menu?</string>
+    <string name="returntomainmenu_winnerpage">Return to Main Menu</string>
+    <string name="restartquickplay_winnerpage">Restart Quick Play</string>
+    <string name="restartcustomgame_winnerpage">Restart Custom Game</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="gonextround">Go to next round</string>
+
+    <string name="winner">WINNER!</string>
+
+    <!-- Gamemode dialog, if add new more, rmb to manually update 4 places: two/three/fourPlayer.java, and MainActivity customGamepopup, and more places. See to.do in quickplay2players-->
+    <string name="dialog_animalkingdom">Animal Kingdom!</string>
+    <string name="dialog_circlecollide">Colliding Circle!</string>
+    <string name="dialog_mixingcolors">Color Mixer!</string>
+    <string name="dialog_screencolor">Colored Screen!</string>
+    <string name="dialog_fivecolorspanel">Color Stripes!</string>
+    <string name="dialog_countryandcontinent">Country &amp; Continent</string>
+    <string name="dialog_solareclipse">Eclipse!</string>
+    <string name="dialog_mathequation">Equation Battle!</string>
+    <string name="dialog_foodparadise">Food Paradise!</string>
+    <string name="dialog_identifyinglanguage">Identifying Languages!</string>
+    <string name="dialog_illusioncircle">Illusion: Circle</string>
+    <string name="dialog_illusiongear">Illusion: Gears!</string>
+    <string name="dialog_illusionrectangle">Illusion: Rectangle</string>
+    <string name="dialog_mandn">M and N</string>
+    <string name="dialog_perfectmatch">Match the Shapes!</string>
+    <string name="dialog_colormatchwords">Matching Colors!</string>
+    <string name="dialog_gradientorb">Multi-Colored Orbs!</string>
+    <string name="dialog_neonarrows">Neon Arrows</string>
+    <string name="dialog_oandx">O more than X</string>
+    <string name="dialog_oddandvowel">Odd and Vowel!</string>
+    <string name="dialog_smilingface">Smiling Faces :)</string>
+    <string name="dialog_spam">Spam Taps!</string>
+    <string name="dialog_unitconversion">Unit Conversion!</string>
+    <string name="dialog_fiveyellowcircle">Five Yellow Circles</string>
+
+
+</resources>

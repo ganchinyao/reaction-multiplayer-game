@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="comments_win">
+        <item>Sweet!</item>
+        <item>Genius!</item>
+        <item>That was Awesome!</item>
+        <item>Perfect!</item>
+        <item>I am Unstoppable!!</item>
+        <item>Great Job!</item>
+        <item>Yes!</item>
+        <item>That was OP!</item>
+    </string-array>
+
+    <string-array name="comments_lose">
+        <item>Are you even trying?</item>
+        <item>NO!!!</item>
+        <item>Almost!</item>
+        <item>Better Luck Next Time!</item>
+        <item>That was terrible!</item>
+        <item>Keep Calm and Move On..</item>
+        <item>Whoa</item>
+        <item>Could have went better..</item>
+    </string-array>
+
+    <string-array name="scorePerCorrectAnswer_showToUser">
+        <item>1 (Default)</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="scorePerCorrectAnswer_actualValue">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="scorePerWrongAnswer_showToUser">
+        <item>0</item>
+        <item>-1 (Default)</item>
+        <item>-2</item>
+        <item>-3</item>
+        <item>-4</item>
+        <item>-5</item>
+        <item>-6</item>
+        <item>-7</item>
+        <item>-8</item>
+        <item>-9</item>
+        <item>-10</item>
+    </string-array>
+
+    <!-- actual value is positive, becos we using minus operator-->
+    <string-array name="scorePerWrongAnswer_actualvalue">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <!-- TODO increase this array item to correspond to number of Game Modes -->
+    <string-array name="roundspergame_showToUser">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10 (Default)</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+    </string-array>
+
+    <!-- TODO increase this array item to correspond to number of Game Modes -->
+    <string-array name="roundspergame_actualValue">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+    </string-array>
+
+    <string-array name="callnextgameround_showntoHuman">
+        <item>1 correct answer</item>
+        <item>2 correct answers</item>
+        <item>3 correct answers (Default)</item>
+        <item>4 correct answers</item>
+        <item>5 correct answers</item>
+        <item>6 correct answers</item>
+        <item>7 correct answers</item>
+        <item>8 correct answers</item>
+        <item>9 correct answers</item>
+        <item>10 correct answers</item>
+    </string-array>
+
+    <string-array name="callnextgameround_actualvalue">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <!-- add more switch case to settingsActivity.java answerDelayTimePreference onPreferenceChange if we add more item here-->
+    <string-array name="answerdelaytime_showntoHuman">
+        <item>0.5 sec</item>
+        <item>1 sec</item>
+        <item>1.5 sec</item>
+        <item>2 sec (Default)</item>
+        <item>2.5 sec</item>
+        <item>3 sec</item>
+        <item>3.5 sec</item>
+        <item>4 sec</item>
+        <item>4.5 sec</item>
+        <item>5 sec</item>
+    </string-array>
+
+    <string-array name="answerdelaytime_actualvalue">
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+        <item>2500</item>
+        <item>3000</item>
+        <item>3500</item>
+        <item>4000</item>
+        <item>4500</item>
+        <item>5000</item>
+    </string-array>
+
+
+    <!-- All 6 continents below, first array element must be the continent name, as this will be used to set continent text name-->
+    <!-- subsequent element order doesnt matter. Size of array doesnt matter-->
+    <string-array name="gameMode_countryAndContinent_Country_Asia">
+        <item>Asia</item>
+        <item>Afghanistan</item>
+        <item>Armenia</item>
+        <item>Bangladesh</item>
+        <item>Brunei</item>
+        <item>Cambodia</item>
+        <item>China</item>
+        <item>Cyprus</item>
+        <item>Georgia</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Israel</item>
+        <item>Japan</item>
+        <item>Kuwait</item>
+        <item>Laos</item>
+        <item>Malaysia</item>
+        <item>Maldives</item>
+        <item>Mongolia</item>
+        <item>Myanmar</item>
+        <item>Nepal</item>
+        <item>Philippines</item>
+        <item>Singapore</item>
+        <item>South Korea</item>
+        <item>Sri Lanka</item>
+        <item>Syria</item>
+        <item>Thailand</item>
+        <item>Turkey</item>
+        <item>United Arab Emirates</item>
+        <item>Vietnam</item>
+        <item>Yemen</item>
+    </string-array>
+
+    <string-array name="gameMode_countryAndContinent_Country_Africa">
+        <item>Africa</item>
+        <item>Algeria</item>
+        <item>Angola</item>
+        <item>Cameroon</item>
+        <item>Cape Verde</item>
+        <item>Congo</item>
+        <item>Egypt</item>
+        <item>Ethiopia</item>
+        <item>Gambia</item>
+        <item>Kenya</item>
+        <item>Liberia</item>
+        <item>Madagascar</item>
+        <item>Malawi</item>
+        <item>Morocco</item>
+        <item>Namibia</item>
+        <item>Nigeria</item>
+        <item>Sierra Leone</item>
+        <item>Somalia</item>
+        <item>Sudan</item>
+        <item>Tunisia</item>
+        <item>Uganda</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+    </string-array>
+
+    <string-array name="gameMode_countryAndContinent_Country_Oceania">
+        <item>Oceania</item>
+        <item>New Zealand</item>
+        <item>Palau</item>
+        <item>Papua New Guinea</item>
+        <item>Samoa</item>
+        <item>Tonga</item>
+        <item>Australia</item>
+        <item>Fiji</item>
+        <item>Guam</item>
+        <item>Marshall Islands</item>
+        <item>Kiribati</item>
+    </string-array>
+
+    <string-array name="gameMode_countryAndContinent_Country_NorthAmerica">
+        <item>North America</item>
+        <item>Bahamas</item>
+        <item>Barbados</item>
+        <item>Canada</item>
+        <item>Costa Rica</item>
+        <item>Cuba</item>
+        <item>Dominica</item>
+        <item>El Salvador</item>
+        <item>Haiti</item>
+        <item>Honduras</item>
+        <item>Jamaica</item>
+        <item>Mexico</item>
+        <item>Panama</item>
+        <item>Saint Lucia</item>
+        <item>United States</item>
+    </string-array>
+
+    <string-array name="gameMode_countryAndContinent_Country_SouthAmerica">
+        <item>South America</item>
+        <item>Argentina</item>
+        <item>Bolivia</item>
+        <item>Brazil</item>
+        <item>Chile</item>
+        <item>Colombia</item>
+        <item>Ecuador</item>
+        <item>Guyana</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Suriname</item>
+        <item>Uruguay</item>
+        <item>Venezuela</item>
+    </string-array>
+
+    <string-array name="gameMode_countryAndContinent_Country_Europe">
+        <item>Europe</item>
+        <item>Austria</item>
+        <item>Belgium</item>
+        <item>Bulgaria</item>
+        <item>Czech Republic</item>
+        <item>Denmark</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>Germany</item>
+        <item>Greece</item>
+        <item>Hungary</item>
+        <item>Iceland</item>
+        <item>Ireland</item>
+        <item>Italy</item>
+        <item>Jersey</item>
+        <item>Luxembourg</item>
+        <item>Monaco</item>
+        <item>Netherlands</item>
+        <item>Norway</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Slovakia</item>
+        <item>Spain</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Ukraine</item>
+        <item>United Kingdom</item>
+    </string-array>
+
+
+    <string-array name="gameMode_FoodParadise_FoodName">
+        <!-- Order Matters. Must correspond to position of the R.drawable.image in FoodParadise.java initialiseTextAndImage() method-->
+        <!-- Make sure length of this array correspond to length of the imageArray in the java, to ensure no ArrayIndexOutOfBound-->
+        <item>Apple</item>
+        <item>Aubergine</item>
+        <item>Avocado</item>
+        <item>Banana</item>
+        <item>Beer</item>
+        <item>Blueberries</item>
+        <item>Bread</item>
+        <item>Broccoli</item>
+        <item>Cabbage</item>
+        <item>Cake</item>
+        <item>Candy</item>
+        <item>Carrot</item>
+        <item>Cheese</item>
+        <item>Cherries</item>
+        <item>Chicken Leg</item>
+        <item>Chili</item>
+        <item>Chocolate</item>
+        <item>Cookies</item>
+        <item>Corn</item>
+        <item>Crab</item>
+        <item>Cupcake</item>
+        <item>Dim Sum</item>
+        <item>Doughnut</item>
+        <item>Egg</item>
+        <item>Fish</item>
+        <item>Frappe</item>
+        <item>Fries</item>
+        <item>Gingerbread</item>
+        <item>Grapes</item>
+        <item>Hamburger</item>
+        <item>Ice cream</item>
+        <item>Kiwi</item>
+        <item>Lemon</item>
+        <item>Lobster</item>
+        <item>Martini</item>
+        <item>Mineral Water</item>
+        <item>Noodles</item>
+        <item>Onion</item>
+        <item>Orange</item>
+        <item>Panna Cotta</item>
+        <item>Pear</item>
+        <item>Pineapple</item>
+        <item>Pizza</item>
+        <item>Popcorn</item>
+        <item>Pudding</item>
+        <item>Rice</item>
+        <item>Roast Chicken</item>
+        <item>Sandwich</item>
+        <item>Sausage</item>
+        <item>Steak</item>
+        <item>Strawberry</item>
+        <item>Sushi</item>
+        <item>Tomato</item>
+        <item>Watermelon</item>
+    </string-array>
+</resources>

@@ -1,0 +1,111 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/gameplaysettings">
+
+
+        <com.react.reactmultiplayergame.helper.MyListPreference
+            android:key="User_Score_Preference"
+            android:title="@string/scorepercorrectans"
+            android:dialogTitle="@string/scorepercorrectans"
+            android:entries="@array/scorePerCorrectAnswer_showToUser"
+            android:entryValues="@array/scorePerCorrectAnswer_actualValue"
+            android:defaultValue="1"
+           />
+
+
+        <com.react.reactmultiplayergame.helper.MyListPreference
+            android:key="User_Score_Preference_Minus"
+            android:title="@string/scoreperwrongans"
+            android:dialogTitle="@string/scoreperwrongans"
+            android:entries="@array/scorePerWrongAnswer_showToUser"
+            android:entryValues="@array/scorePerWrongAnswer_actualvalue"
+            android:defaultValue="1"
+            />
+
+        <com.react.reactmultiplayergame.helper.MyListPreference
+            android:key="QuickPlay_Total_Number_Of_Rounds"
+            android:title="@string/roundpergame"
+            android:dialogTitle="@string/roundpergame"
+            android:entries="@array/roundspergame_showToUser"
+            android:entryValues="@array/roundspergame_actualValue"
+            android:defaultValue="10"
+            />
+
+        <com.react.reactmultiplayergame.helper.MyListPreference
+            android:key="To_Next_GameMode_Preference"
+            android:summary="@string/callnextgameround_desc"
+            android:title="@string/callnextgameround"
+            android:dialogTitle="@string/callnextgameround_dialogtitle"
+            android:entries="@array/callnextgameround_showntoHuman"
+            android:entryValues="@array/callnextgameround_actualvalue"
+            android:defaultValue="3"
+            />
+
+        <com.react.reactmultiplayergame.helper.MyListPreference
+            android:key="User_Delay_Preference"
+            android:summary="@string/answerdelaytime_desc"
+            android:title="@string/answerdelaytime"
+            android:dialogTitle="@string/answerdelaytime"
+            android:entries="@array/answerdelaytime_showntoHuman"
+            android:entryValues="@array/answerdelaytime_actualvalue"
+            android:defaultValue="2000"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/react">
+
+        <Preference
+            android:key="settings_developersletter"
+            android:persistent="false"
+            android:summary="@string/developersletter_desc"
+            android:title="@string/developersletter" />
+
+        <Preference
+            android:key="settings_policy"
+            android:persistent="false"
+            android:summary="@string/policy_desc"
+            android:title="@string/policy" />
+
+        <!--<Preference-->
+            <!--android:summary="@string/helpustranslate_desc"-->
+            <!--android:title="@string/helpustranslate" />-->
+
+        <Preference
+            android:key="settings_feedback"
+            android:persistent="false"
+            android:summary="@string/sendusfeedback_desc"
+            android:title="@string/sendusfeedback" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/about">
+
+
+        <Preference
+            android:key="nested_faqpage"
+            android:persistent="false"
+            android:summary="@string/faq_desc"
+            android:title="@string/faq" />
+
+
+        <Preference
+            android:key="settings_credits"
+            android:persistent="false"
+            android:summary="@string/credits_desc"
+            android:title="@string/credits" />
+
+        <Preference
+            android:key="settings_contactus"
+            android:persistent="false"
+            android:title="@string/credits_contactus" />
+
+        <Preference
+            android:title="@string/Version"
+            android:summary="1.1.0"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

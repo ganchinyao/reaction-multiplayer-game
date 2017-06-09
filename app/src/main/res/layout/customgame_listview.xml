@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ListView cant use margin at all. So we got no choice but to add a empty view with a width,
+     then align the checkbox to left of it to create a margin effect
+     No need to apply for textview as the ListView root container in viewpager_page1 itself has a marginLeft alr-->
+
+    <View
+        android:id="@+id/customgame_emptyView2"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/customgame_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        tools:text="TextView"
+        android:textSize="@dimen/_14ssp"
+        android:gravity="center"
+        android:textColor="@color/primaryBlueForMainPage"/>
+
+    <RelativeLayout
+        android:id="@+id/customgame_checkboxContainer"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_width="@dimen/_20sdp"
+        android:background="@drawable/customgame_listviewcheckbox"
+        android:layout_toLeftOf="@id/customgame_emptyView2"
+        android:layout_centerVertical="true"
+        >
+
+        <ImageView
+            android:id="@+id/customgame_checkboxTick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/checkbox_tick"
+            android:visibility="gone"/>
+
+        <com.react.reactmultiplayergame.helper.AutoResizeTextView
+            android:id="@+id/customgame_checkboxNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:text="0"
+            android:gravity="center"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/primaryBlueForMainPage"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/settings_policy1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/faqbottomlineonlybackground">
+
+            <TextView
+                android:id="@+id/settings_policy_text1"
+                app:layout_widthPercent= "80%"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:text="@string/privacypolicy"
+                android:gravity="center_vertical"
+                android:paddingTop="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"/>
+
+            <ImageView
+                android:id="@+id/settings_policy_ImageView1"
+                android:layout_height="20dp"
+                app:layout_aspectRatio="100%"
+                android:src="@drawable/faqarrow_down"
+                android:layout_alignParentRight="true"
+                app:layout_marginRightPercent="4.5%"
+                android:layout_alignBottom="@id/settings_policy_text1"
+                android:layout_marginBottom="@dimen/_16sdp"/>
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/settings_policy_answer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="500"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_16sdp"
+                android:text="@string/privacypolicy_text1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingRight="@dimen/_16sdp"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_16sdp"
+                android:text="@string/privacypolicy_text2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingRight="@dimen/_16sdp"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:text="@string/privacypolicy_text3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:text="@string/privacypolicy_text4"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:text="@string/privacypolicy_text5"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:text="@string/privacypolicy_text6"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:text="@string/privacypolicy_text7"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:text="@string/privacypolicy_text8"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:text="@string/privacypolicy_text9"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:text="@string/privacypolicy_text10"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:text="@string/privacypolicy_text11"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:background="@drawable/faqbottomlineonlybackground"
+                    />
+
+
+            </LinearLayout>
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/settings_policy2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/faqbottomlineonlybackground">
+
+            <TextView
+                android:id="@+id/settings_policy_text2"
+                app:layout_widthPercent= "80%"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:text="@string/parentsguide"
+                android:gravity="center_vertical"
+                android:paddingTop="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"/>
+
+            <ImageView
+                android:id="@+id/settings_policy_ImageView2"
+                android:layout_height="20dp"
+                app:layout_aspectRatio="100%"
+                android:src="@drawable/faqarrow_down"
+                android:layout_alignParentRight="true"
+                app:layout_marginRightPercent="4.5%"
+                android:layout_alignBottom="@id/settings_policy_text2"
+                android:layout_marginBottom="@dimen/_16sdp"/>
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/settings_policy_answer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="500"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_16sdp"
+                android:text="@string/parentsguide_text1"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingRight="@dimen/_16sdp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_16sdp"
+                android:text="@string/parentsguide_text2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingRight="@dimen/_16sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:text="@string/parentsguide_text3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:text="@string/parentsguide_text4"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:text="@string/parentsguide_text5"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:text="@string/parentsguide_text6"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:text="@string/parentsguide_text7"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:background="@drawable/faqbottomlineonlybackground"
+                    />
+
+            </LinearLayout>
+        </net.cachapa.expandablelayout.ExpandableLayout>
+    </LinearLayout>
+
+</ScrollView>

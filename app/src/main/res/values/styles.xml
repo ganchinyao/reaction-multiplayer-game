@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:soundEffectsEnabled">false</item>
+    </style>
+
+    <style name="casualAndBold">
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!-- Want to separate from the AppTheme above and add just 2 more attribute: dialogTheme-->
+    <style name="settings_dialog" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">#F8BBD0</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:soundEffectsEnabled">false</item>
+
+
+        <item name="android:dialogTheme">@style/settings_dialog_dialog</item>
+        <item name="android:alertDialogTheme">@style/settings_dialog_dialog</item>
+    </style>
+
+    <style name="settings_dialog_dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">#FCE4EC</item>
+    </style>
+</resources>

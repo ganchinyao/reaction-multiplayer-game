@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/dialogTopRelative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:padding="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:background="@drawable/questiondialog_customrect"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:id="@+id/dialogQuestionBottom2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Bottom Text"
+                    android:textSize="@dimen/_18ssp"
+                    android:textStyle="bold"
+                    android:textColor="#ECEFF1"
+                    android:gravity="center"
+                    android:rotation="180"/>
+
+                <TextView
+                    android:id="@+id/dialogQuestionTop2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Top Text"
+                    android:gravity="center"
+                    android:textSize="@dimen/_16ssp"
+                    android:textColor="#B0BEC5"
+                    android:layout_below="@id/dialogQuestionBottom2"
+                    android:rotation="180"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"></RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/dialogBottomRelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/questiondialog_customrect"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:padding="@dimen/_20sdp"
+            >
+            <TextView
+                android:id="@+id/dialogQuestionTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="TOP"
+                android:textSize="@dimen/_16ssp"
+                android:textColor="#B0BEC5" />
+
+            <TextView
+                android:id="@+id/dialogQuestionBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Bottom Text"
+                android:gravity="center"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold"
+                android:textColor="#ECEFF1"
+                android:layout_below="@id/dialogQuestionTop"/>
+        </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

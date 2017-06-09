@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#80323232"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/shop_emptyContainer1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.165"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shop_emptyContainer2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/shop_popupClose"
+                android:clickable="true"
+                android:src="@drawable/quickplay_popup_closeselector"
+                app:layout_aspectRatio="100%"
+                app:layout_heightPercent="100%"
+                app:layout_marginRightPercent="4.5%" />
+        </android.support.percent.PercentRelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.01"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.655"
+        android:orientation="vertical">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/quickplay_popup_background"
+                app:layout_marginLeftPercent="4.5%"
+                app:layout_marginRightPercent="4.5%" />
+
+            <ImageView
+                android:id="@+id/shop_ribbon"
+                app:layout_heightPercent= "14%"
+                android:layout_width="match_parent"
+                app:layout_marginLeftPercent="9%"
+                app:layout_marginRightPercent="9%"
+                app:layout_marginTopPercent="8%"
+                android:background="@drawable/shop_ribbon"
+
+                />
+
+            <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                android:id="@+id/quickplay_choosedifficulty"
+                android:layout_width="match_parent"
+                app:layout_heightPercent= "11.5%"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="@string/shop_caps"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_24ssp"
+                android:textStyle="bold"
+                android:gravity="center"
+                app:layout_marginLeftPercent="18%"
+                app:layout_marginRightPercent="18%"
+                app:layout_marginTopPercent="8%" />
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/shop_middleContainer"
+                android:layout_width="match_parent"
+                app:layout_heightPercent= "64%"
+                android:layout_below="@id/shop_ribbon"
+                app:layout_marginLeftPercent="4.5%"
+                app:layout_marginRightPercent="4.5%"
+                app:layout_marginTopPercent="2%"
+                android:gravity="center_horizontal">
+                <!-- Set background programmatically with gray color filter-->
+                <ImageView
+                    android:id="@+id/shop_removeadsbackground"
+                    app:layout_heightPercent= "100%"
+                    app:layout_widthPercent= "46%"
+                    />
+                <!-- Set background programmatically with gray color filter-->
+                <ImageView
+                    android:id="@+id/shop_unlockInsanebackground"
+                    app:layout_heightPercent= "100%"
+                    app:layout_widthPercent= "46%"
+                    app:layout_marginLeftPercent="2%"
+                    android:layout_toRightOf="@id/shop_removeadsbackground"
+                    />
+
+                <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                    android:id="@+id/shop_removeAds_PRICE"
+                    app:layout_heightPercent= "19%"
+                    app:layout_widthPercent= "18%"
+                    tools:text="$0.99"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_14ssp"
+                    android:rotation="-35"
+                    android:gravity="center"
+                    />
+
+                <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                    android:id="@+id/shop_unlockInsane_PRICE"
+                    app:layout_heightPercent= "19%"
+                    app:layout_widthPercent= "18%"
+                    tools:text="$1.99"
+                    android:layout_alignRight="@id/shop_unlockInsanebackground"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_14ssp"
+                    android:rotation="35"
+                    android:gravity="center"
+                    />
+
+                <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                    app:layout_heightPercent= "9%"
+                    app:layout_widthPercent= "46%"
+                    android:text="@string/removeads"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_14ssp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_5sdp"
+                    app:layout_marginTopPercent="19%"
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    />
+
+                <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                    app:layout_heightPercent= "9%"
+                    app:layout_widthPercent= "46%"
+                    android:text="@string/insaneMode"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_14ssp"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/_5sdp"
+                    app:layout_marginTopPercent="19%"
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:layout_alignRight="@id/shop_unlockInsanebackground"
+                    />
+
+                <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                    app:layout_heightPercent= "8%"
+                    app:layout_widthPercent= "18%"
+                    android:text="@string/insane"
+                    android:textColor="#9E9E9E"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15ssp"
+                    android:gravity="center"
+                    app:layout_marginTopPercent="54%"
+                    app:layout_marginRightPercent="14%"
+                    android:layout_alignRight="@id/shop_unlockInsanebackground"
+                    />
+
+                <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                    app:layout_heightPercent= "10%"
+                    app:layout_widthPercent= "40%"
+                    app:layout_marginTopPercent="67%"
+                    app:layout_marginLeftPercent="3%"
+                    android:background="@drawable/shop_itemdescriptionrect"
+                    android:text="@string/nomoreads"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textSize="@dimen/_12ssp"
+                    />
+
+                <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                    android:id="@+id/shop_findoutmoreTextView"
+                    app:layout_heightPercent= "10%"
+                    app:layout_widthPercent= "40%"
+                    app:layout_marginTopPercent="67%"
+                    app:layout_marginRightPercent="3%"
+                    android:background="@drawable/shop_itemdescriptionrect"
+                    android:text="@string/findoutmore"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_alignRight="@id/shop_unlockInsanebackground"
+                    android:clickable="true"
+                    />
+
+                <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                    android:id="@+id/shop_removeAds_BUYNOWButton"
+                    app:layout_heightPercent= "14%"
+                    app:layout_widthPercent= "34%"
+                    app:layout_marginTopPercent="83%"
+                    app:layout_marginLeftPercent="6%"
+                    android:background="@drawable/shop_buynowsold"
+                    android:text="@string/soldout"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_14ssp"
+                    android:clickable="true"
+                    />
+
+                <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                    android:id="@+id/shop_unlockInsane_BUYNOWButton"
+                    app:layout_heightPercent= "14%"
+                    app:layout_widthPercent= "34%"
+                    app:layout_marginTopPercent="83%"
+                    app:layout_marginRightPercent="6%"
+                    android:background="@drawable/shop_buynowsold"
+                    android:layout_alignRight="@id/shop_unlockInsanebackground"
+                    android:text="@string/soldout"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_14ssp"
+                    android:clickable="true"
+                    />
+
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                android:id="@+id/shop_restoreYourPurchase"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/restorepurchase"
+                android:layout_below="@id/shop_middleContainer"
+                android:textColor="@color/primaryBlueForMainPage"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/_12ssp"
+                app:layout_marginTopPercent="2%"
+                app:layout_marginBottomPercent="4%"
+                />
+        </android.support.percent.PercentRelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shop_emptyContainer3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.12"
+        android:orientation="vertical"></LinearLayout>
+</LinearLayout>

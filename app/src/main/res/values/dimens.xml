@@ -1,0 +1,52 @@
+<resources>
+    <!-- Default phone size -->
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="quickplay_playerComment">20sp</dimen>
+    <!-- 34players means for smaller button that is split into2 for 3/4 player mode-->
+    <dimen name="quickplay_playerComment34Players">14sp</dimen>
+    <dimen name="quickplay_playerScore">14sp</dimen>
+    <dimen name="quickplay_playerScore34Players">10sp</dimen>
+    <dimen name="quickplay_playerQuestionText">16sp</dimen>
+    <dimen name="quickplay_18sp">18sp</dimen>
+    <dimen name="quickplay_dialogBigText">24sp</dimen>
+    <dimen name="quickplay_dialogSmallText">22sp</dimen>
+    <dimen name="quickplay_margin5dp">5dp</dimen>
+    <dimen name="quickplay_margin2dp">2dp</dimen>
+    <dimen name="quickplay_margin3dp">3dp</dimen>
+    <dimen name="quickplay_10dp">10dp</dimen>
+    <dimen name="quickplay_15dp">15dp</dimen>
+    <dimen name="quickplay_20dp">20dp</dimen>
+    <dimen name="quickplay_25dp">25dp</dimen>
+    <dimen name="quickplay_30dp">30dp</dimen>
+    <dimen name="quickplay_50dp">50dp</dimen>
+    <dimen name="quickplay_100dp">100dp</dimen>
+
+    <dimen name="gameContent_UnitConversion_textSize">26sp</dimen>
+    <dimen name="gameContent_colorMatchWordsBigText">36sp</dimen>
+    <dimen name="gameContent_colorMatchWordsSmallText">30sp</dimen>
+    <dimen name="gameContent_fivecolorpanelCorrectWordSize">48sp</dimen>
+    <dimen name="gameContent_identifyinglanguageBigText">26sp</dimen>
+    <dimen name="gameContent_identifyinglanguageSmallText">20sp</dimen>
+    <dimen name="gameContent_oddandvowelTextSmall">22sp</dimen>
+    <dimen name="gameContent_oddandvowelTextMedium">32sp</dimen>
+    <dimen name="gameContent_oddandvowel_Velocity15">15dp</dimen>
+    <dimen name="gameContent_oddandvowel_Velocity20">20dp</dimen>
+    <dimen name="gameContent_oddandvowel_Velocity25">25dp</dimen>
+    <dimen name="gameContent_oddandvowel_Velocity35">35dp</dimen>
+    <dimen name="gameContent_touchingspamTrackerSize">22sp</dimen>
+    <dimen name="gameContent_illusionlength_additionalLength">40px</dimen>
+    <dimen name="gameContent_illusionlength_additionalBreath">10px</dimen>   <!-- additionLength & breath must be > 5. Otherwise code in .java will break for wrong scenario-->
+    <dimen name="gameContent_illusionlength_additionalDimension_ForWrongAns">20dp</dimen>
+    <dimen name="gameContent_solareclipse_glow_addsize">30px</dimen>
+    <dimen name="gameContent_solareclipse_shootingStarVelocity">140dp</dimen>
+
+
+    <dimen name="quickplay_popup_easymediumhardinsane_size">16sp</dimen>
+    <dimen name="quickplay_popup_1dpstroke">1dp</dimen>
+
+    <dimen name="winnerpage_returntomainmenu">16sp</dimen>
+
+</resources>

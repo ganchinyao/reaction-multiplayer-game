@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quickplay_fourplayer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gamemode_background"
+    android:orientation="vertical"
+    tools:context="com.react.reactmultiplayergame.QuickPlayFourPlayer">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/winnerpage_TopReturnToMainMenuButton"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/editplayername_doneselector"
+                android:clickable="true"
+                app:layout_heightPercent="30%"
+                app:layout_marginBottomPercent="8%"
+                app:layout_widthPercent="65%">
+
+                <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:rotation="180"
+                    android:text="@string/returntomainmenu_winnerpage"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/winnerpage_TopRestartQuickPlayButton"
+                android:layout_above="@id/winnerpage_TopReturnToMainMenuButton"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/editplayername_cancelselector"
+                android:clickable="true"
+                app:layout_heightPercent="30%"
+                app:layout_marginBottomPercent="4%"
+                app:layout_widthPercent="65%">
+
+                <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                    android:id="@+id/winnerpage_restartbuttontextTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:rotation="180"
+                    android:text="@string/restartquickplay_winnerpage"
+                    android:textColor="@color/primaryOrangeForMainPage"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/threeplayer_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"></View>
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_toRightOf="@id/threeplayer_view">
+
+                <ImageView
+                    android:id="@+id/winnerpage_player3Glow"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:rotation="180"
+                    app:layout_heightPercent="70%"
+                    app:layout_widthPercent="90%" />
+            </android.support.percent.PercentRelativeLayout>
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_toLeftOf="@id/threeplayer_view">
+
+                <ImageView
+                    android:id="@+id/winnerpage_player4Glow"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:rotation="180"
+                    app:layout_heightPercent="70%"
+                    app:layout_widthPercent="90%" />
+
+            </android.support.percent.PercentRelativeLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_weight="0.5"
+        android:background="@drawable/winnerpage_centerbackground">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--@@@@@@@@@@@@@@@@@@@@ CENTER RECTANGLE Content View @@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:background="@drawable/winnerpage_rectangleglow"
+                app:layout_heightPercent="48%" />
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/winnerpage_centerRectangle"
+                android:layout_width="match_parent"
+                android:layout_centerInParent="true"
+                app:layout_heightPercent="17%">
+
+                <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                    android:id="@+id/winnerpage_winnertext_top"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center|bottom"
+                    android:maxLines="1"
+                    android:rotation="180"
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text="@string/winner"
+                    android:textColor="@color/winnerpage_pink"
+                    android:textSize="@dimen/_20ssp"
+                    android:textStyle="bold"
+                    app:layout_heightPercent="45%"
+                    app:layout_marginTopPercent="5%" />
+
+                <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                    android:id="@+id/winnerpage_winnertext_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/winnerpage_winnertext_top"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center|bottom"
+                    android:maxLines="1"
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text="@string/winner"
+                    android:textColor="@color/winnerpage_pink"
+                    android:textSize="@dimen/_20ssp"
+                    android:textStyle="bold"
+                    app:layout_heightPercent="45%" />
+
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/winnerpage_winnertext_top"
+                    android:src="@drawable/winnerpage_flower"
+                    app:layout_aspectRatio="100%"
+                    app:layout_heightPercent="70%"
+                    app:layout_marginRightPercent="6%" />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/winnerpage_winnertext_top"
+                    android:rotation="180"
+                    android:src="@drawable/winnerpage_flower"
+                    app:layout_aspectRatio="100%"
+                    app:layout_heightPercent="70%"
+                    app:layout_marginLeftPercent="6%" />
+            </android.support.percent.PercentRelativeLayout>
+
+            <!--@@@@@@@@@@@@@@@@@@@@ BOTTOM Content View @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+
+
+
+                    <ImageView
+                        android:id="@+id/winnerpage_bottomRibbon"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/winnerpage_ribbon"
+                        app:layout_heightPercent="17%"
+                        app:layout_marginBottomPercent="3%"
+                        app:layout_marginLeftPercent="10%"
+                        app:layout_marginRightPercent="10%"/>
+
+
+
+            <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                android:id="@+id/winnerpage_bottomName"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/winnerpage_pink"
+                android:textSize="@dimen/_22ssp"
+                android:textStyle="bold"
+                app:layout_heightPercent="10%"
+                app:layout_marginBottomPercent="5%"
+                app:layout_widthPercent="45%"
+                tools:text="Hermione" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/winnerpage_centerRectangle"
+                android:orientation="vertical"
+                app:layout_marginBottomPercent="20%">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.45">
+
+                    <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                        android:id="@+id/winnerpage_bottomPlayer1Name"
+                        android:layout_height="match_parent"
+                        android:gravity="center|bottom"
+                        android:maxLines="2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_widthPercent="25%"
+                        tools:text="Padme" />
+
+                    <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                        android:id="@+id/winnerpage_bottomPlayer2Name"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/winnerpage_bottomPlayer1Name"
+                        android:gravity="center|bottom"
+                        android:maxLines="2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_widthPercent="25%"
+                        tools:text="Hermione" />
+
+                    <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                        android:id="@+id/winnerpage_bottomPlayer3Name"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/winnerpage_bottomPlayer2Name"
+                        android:gravity="center|bottom"
+                        android:maxLines="2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_widthPercent="25%"
+                        tools:text="Jasmine" />
+
+                    <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                        android:id="@+id/winnerpage_bottomPlayer4Name"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/winnerpage_bottomPlayer3Name"
+                        android:gravity="center|bottom"
+                        android:maxLines="2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_widthPercent="25%"
+                        tools:text="ShinHye" />
+
+                </android.support.percent.PercentRelativeLayout>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.55">
+
+                    <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                        android:id="@+id/winnerpage_bottomPlayer1Score"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_24ssp"
+                        app:layout_widthPercent="25%"
+                        tools:text="5" />
+
+                    <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                        android:id="@+id/winnerpage_bottomPlayer2Score"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/winnerpage_bottomPlayer1Score"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_24ssp"
+                        app:layout_widthPercent="25%"
+                        tools:text="12" />
+
+                    <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                        android:id="@+id/winnerpage_bottomPlayer3Score"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/winnerpage_bottomPlayer2Score"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_24ssp"
+                        app:layout_widthPercent="25%"
+                        tools:text="12" />
+
+                    <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                        android:id="@+id/winnerpage_bottomPlayer4Score"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/winnerpage_bottomPlayer3Score"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_24ssp"
+                        app:layout_widthPercent="25%"
+                        tools:text="12" />
+                </android.support.percent.PercentRelativeLayout>
+            </LinearLayout>
+
+
+            <!--@@@@@@@@@@@@@@@@@@@@ TOP Content View @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+
+                    <ImageView
+                        android:id="@+id/winnerpage_topRibbon"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/winnerpage_ribbon"
+                        app:layout_heightPercent="17%"
+                        app:layout_marginTopPercent="3%"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:rotation="180"
+                        app:layout_marginLeftPercent="10%"
+                        app:layout_marginRightPercent="10%"/>
+
+
+
+            <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                android:id="@+id/winnerpage_topName"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:maxLines="1"
+                android:rotation="180"
+                android:textColor="@color/winnerpage_pink"
+                android:textSize="@dimen/_22ssp"
+                android:textStyle="bold"
+                app:layout_heightPercent="10%"
+                app:layout_marginTopPercent="5%"
+                app:layout_widthPercent="45%"
+                tools:text="Hermione" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/winnerpage_centerRectangle"
+                android:orientation="vertical"
+                app:layout_marginTopPercent="20%">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.55">
+
+                    <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                        android:id="@+id/winnerpage_topPlayer4Score"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:rotation="180"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_24ssp"
+                        app:layout_widthPercent="25%"
+                        tools:text="12" />
+
+                    <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                        android:id="@+id/winnerpage_topPlayer3Score"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/winnerpage_topPlayer4Score"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:rotation="180"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_24ssp"
+                        app:layout_widthPercent="25%"
+                        tools:text="12" />
+
+                    <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                        android:id="@+id/winnerpage_topPlayer2Score"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/winnerpage_topPlayer3Score"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:rotation="180"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_24ssp"
+                        app:layout_widthPercent="25%"
+                        tools:text="12" />
+
+                    <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                        android:id="@+id/winnerpage_topPlayer1Score"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/winnerpage_topPlayer2Score"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:rotation="180"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_24ssp"
+                        app:layout_widthPercent="25%"
+                        tools:text="5" />
+
+                </android.support.percent.PercentRelativeLayout>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.45">
+
+                    <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                        android:id="@+id/winnerpage_topPlayer4Name"
+                        android:layout_height="match_parent"
+                        android:gravity="center|bottom"
+                        android:maxLines="2"
+                        android:rotation="180"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_widthPercent="25%"
+                        tools:text="ShinHye" />
+
+                    <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                        android:id="@+id/winnerpage_topPlayer3Name"
+                        android:layout_height="match_parent"
+                        android:gravity="center|bottom"
+                        android:layout_toRightOf="@id/winnerpage_topPlayer4Name"
+                        android:maxLines="2"
+                        android:rotation="180"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_widthPercent="25%"
+                        tools:text="Jasmine" />
+
+                    <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                        android:id="@+id/winnerpage_topPlayer2Name"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/winnerpage_topPlayer3Name"
+                        android:gravity="center|bottom"
+                        android:maxLines="2"
+                        android:rotation="180"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_widthPercent="25%"
+                        tools:text="Hermione" />
+
+                    <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                        android:id="@+id/winnerpage_topPlayer1Name"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/winnerpage_topPlayer2Name"
+                        android:gravity="center|bottom"
+                        android:maxLines="2"
+                        android:rotation="180"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_12ssp"
+                        app:layout_widthPercent="25%"
+                        tools:text="Padme" />
+
+                </android.support.percent.PercentRelativeLayout>
+
+            </LinearLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+        <!-- @@@@@@@@@@@@@@@@@@@@@@@ END OF CENTER CONTENT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/winnerpage_BottomReturnToMainMenuButton"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/editplayername_doneselector"
+                android:clickable="true"
+                app:layout_heightPercent="30%"
+                app:layout_marginTopPercent="8%"
+                app:layout_widthPercent="65%">
+
+                <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/returntomainmenu_winnerpage"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/winnerpage_BottomRestartQuickPlayButton"
+                android:layout_below="@id/winnerpage_BottomReturnToMainMenuButton"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/editplayername_cancelselector"
+                android:clickable="true"
+                app:layout_heightPercent="30%"
+                app:layout_marginTopPercent="4%"
+                app:layout_widthPercent="65%">
+
+                <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                    android:id="@+id/winnerpage_restartbuttontextBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/restartquickplay_winnerpage"
+                    android:textColor="@color/primaryOrangeForMainPage"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/fourplayer_view2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"></View>
+
+            <RelativeLayout
+                android:id="@+id/fourplayer_player1Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/fourplayer_player1Question"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_toLeftOf="@id/fourplayer_view2">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/winnerpage_player1Glow"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        app:layout_heightPercent="70%"
+                        app:layout_widthPercent="90%" />
+
+                </android.support.percent.PercentRelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fourplayer_player2Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/fourplayer_player1Question"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_toRightOf="@id/fourplayer_view2">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/winnerpage_player2Glow"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        app:layout_heightPercent="70%"
+                        app:layout_widthPercent="90%" />
+
+
+                </android.support.percent.PercentRelativeLayout>
+            </RelativeLayout>
+        </android.support.percent.PercentRelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

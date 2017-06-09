@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/howtoplay_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/primaryOrangeForMainPage"
+        >
+            <ImageView
+                android:id="@+id/howtoplay_backbutton"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingRight="@dimen/_15sdp"
+                android:paddingLeft="@dimen/_1sdp"
+                android:src="@drawable/backarrowbutton"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/howtoplay"
+                android:textStyle="bold"
+                android:textSize="@dimen/_16ssp"
+                android:textColor="#FFFFFF"
+                android:layout_toRightOf="@id/howtoplay_backbutton"
+                android:gravity="center_vertical"/>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <com.react.reactmultiplayergame.helper.AutoResizeTextView
+           android:layout_width="@dimen/_25sdp"
+           android:layout_height="@dimen/_25sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="1"
+            android:textSize="@dimen/_16sdp"
+            android:background="@drawable/playerscore_flower"
+            android:gravity="center"
+            android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:src="@drawable/howtoplay1"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12ssp"
+                android:text="@string/howtoplay_text1"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                />
+
+            <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="2"
+                android:textSize="@dimen/_16sdp"
+                android:background="@drawable/playerscore_flower"
+                android:gravity="center"
+                android:textColor="#FFFFFF"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:src="@drawable/howtoplay2"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:src="@drawable/howtoplay3"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12ssp"
+                android:text="@string/howtoplay_text23"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_70sdp"
+                android:src="@drawable/howtoplay4"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:adjustViewBounds="true"
+                />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="@string/howtoplay_text4"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    />
+
+            </LinearLayout>
+
+            <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="3"
+                android:textSize="@dimen/_16sdp"
+                android:background="@drawable/playerscore_flower"
+                android:gravity="center"
+                android:textColor="#FFFFFF"/>
+
+            <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp"
+            android:src="@drawable/howtoplay5"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+                android:adjustViewBounds="true"
+            />
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12ssp"
+            android:text="@string/howtoplay_text5_1"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/colorAccent"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14ssp"
+                android:text="@string/objective"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12ssp"
+                android:text="@string/objective_desc"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12ssp"
+                android:text="@string/objective_desc2"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

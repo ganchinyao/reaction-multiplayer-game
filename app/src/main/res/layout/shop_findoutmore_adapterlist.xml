@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/shopfindoutmoreadapter_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/faqbottomlineonlybackground">
+
+        <TextView
+            android:id="@+id/shopfindoutmoreadapter_gameModeText"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/_12sdp"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:textColor="#000000"
+            android:textSize="@dimen/_14ssp"
+            android:layout_marginRight="@dimen/_52sdp"
+            />
+
+        <ImageView
+            android:id="@+id/shopfindoutmoreadapter_downArrowImage"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_alignBottom="@id/shopfindoutmoreadapter_gameModeText"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:src="@drawable/faqarrow_down"
+            android:layout_marginRight="@dimen/_16sdp" />
+
+    </RelativeLayout>
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/shopfindoutmoreadapter_expandableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:el_duration="500"
+        app:el_expanded="false"
+        app:el_parallax="0.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/shopfindoutmoreadapter_mainImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"></ImageView>
+
+
+            <TextView
+                android:id="@+id/shopfindoutmoreadapter_hardText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_16sdp"
+                android:paddingRight="@dimen/_16sdp"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/shopfindoutmoreadapter_insaneText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/faqbottomlineonlybackground"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_16sdp"
+                android:paddingRight="@dimen/_16sdp"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_12ssp" />
+        </LinearLayout>
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+</LinearLayout>

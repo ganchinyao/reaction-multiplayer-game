@@ -1,0 +1,57 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.react.reactmultiplayergame"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 7
+        // manually change the version name in settings.xml when versionname changed
+        versionName "1.1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.github.jinatonic.confetti:confetti:1.1.0'
+    compile 'me.grantland:autofittextview:0.2.+'
+    compile 'com.android.support:percent:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.google.firebase:firebase-ads:10.2.4'
+    compile 'net.cachapa.expandablelayout:expandablelayout:2.8'
+    compile 'com.facebook.android:audience-network-sdk:4.+'
+    testCompile 'junit:junit:4.12'
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true;
+    }
+    compile 'com.anjlab.android.iab.v3:library:1.0.+'
+}
+apply plugin: 'com.google.gms.google-services'

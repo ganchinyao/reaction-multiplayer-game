@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/homepage_background"
+    android:weightSum="1"
+    tools:context="com.react.reactmultiplayergame.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.09">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Set mute icon programmatically based on sharedPreference-->
+            <ImageView
+                android:id="@+id/homepageMute"
+                app:layout_heightPercent= "100%"
+                app:layout_aspectRatio="100%"
+                android:clickable="true"
+                app:layout_marginRightPercent="10%"
+                android:layout_alignParentRight="true"
+                />
+        </android.support.percent.PercentRelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.04"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.27"
+        android:orientation="horizontal">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+            <!-- aspectRatio 168% becoz original image is 504h x 300w, hence 1.68:1-->
+            <ImageView
+                android:id="@+id/imageview"
+                app:layout_heightPercent="80%"
+                app:layout_aspectRatio="168%"
+                android:src="@drawable/homepage_reactlogo" />
+        </android.support.percent.PercentRelativeLayout>
+    </LinearLayout>
+
+    <!-- main 4 buttons are layout programmatically -->
+    <LinearLayout
+        android:id="@+id/fourmainbuttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.26"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <!-- Make it default invisible so that for whatever reason if fb ads is nv shown to some ppl, maybe no fb acc
+        then we will not see this container at all -->
+    <LinearLayout
+        android:id="@+id/ads_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.22"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        >
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                app:layout_heightPercent="68.1%"
+                android:layout_alignParentBottom="true">
+
+                <ImageView
+                    android:id="@+id/adsbackground"
+                    android:layout_height="match_parent"
+                    app:layout_widthPercent="76%"
+                    android:scaleType="fitXY"
+                    app:layout_marginLeftPercent="12%"
+                    android:src="@drawable/homepage_adsbackground"
+                    />
+
+                <ImageView
+                    android:id="@+id/homepageAdsIcon"
+                    app:layout_heightPercent="50%"
+                    app:layout_aspectRatio="100%"
+                    android:layout_centerVertical="true"
+                    app:layout_marginLeftPercent="16.2%"
+                    />
+
+
+                <RelativeLayout
+                    android:id="@+id/homepage_adchoiceicon"
+                    app:layout_heightPercent= "30%"
+                    app:layout_widthPercent="23%"
+                    app:layout_marginTopPercent="5%"
+                    android:layout_alignParentRight="true"
+                    android:gravity="bottom|left"
+                    ></RelativeLayout>
+
+                <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                    android:id="@+id/homepageAdsTitle"
+                    android:layout_width="match_parent"
+                    app:layout_heightPercent= "26%"
+                    android:layout_toRightOf="@id/homepageAdsIcon"
+                    android:layout_toLeftOf="@id/homepage_adchoiceicon"
+                    app:layout_marginLeftPercent="2%"
+                    app:layout_marginTopPercent="10%"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@color/primaryBlueForMainPage"
+                    tools:text="Toggle Unable to "
+                    android:gravity="bottom"
+                    />
+
+
+                <RelativeLayout
+                    android:id="@+id/homepage_ad_call_to_action"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/homepageadselector"
+                    android:layout_below="@id/homepageAdsTitle"
+                    app:layout_marginLeftPercent="2%"
+                    app:layout_marginRightPercent="4%"
+                    app:layout_marginTopPercent="3%"
+                    app:layout_marginBottomPercent="20%"
+                    android:layout_toRightOf="@id/homepageAdsIcon"
+                    android:layout_alignRight="@id/adsbackground"
+                    android:layout_alignBottom="@id/adsbackground"
+                    android:clickable="true"
+                    >
+
+                    <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                        android:id="@+id/homepage_ad_calltoaction_textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_14ssp"
+                        tools:text="Download Now"
+                        android:textColor="@android:color/white"
+                        android:gravity="center"
+                        />
+                </RelativeLayout>
+
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                android:id="@+id/adflowerText"
+                app:layout_heightPercent="22%"
+                app:layout_aspectRatio="100%"
+                android:maxLines="1"
+                android:text="Ad"
+                android:textColor="@android:color/white"
+                app:layout_marginLeftPercent="10.5%"
+                app:layout_marginTopPercent="25%"
+                android:gravity="center"
+                android:textSize="@dimen/_9sdp"
+                android:background="@drawable/homepage_adflower"
+                />
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/homepageHelpButton"
+                app:layout_heightPercent= "100%"
+                app:layout_aspectRatio="100%"
+                android:adjustViewBounds="true"
+                android:src="@drawable/homepage_helpselector"
+                android:clickable="true"
+                android:layout_marginRight="@dimen/_20sdp"
+                />
+
+
+            <ImageView
+                android:id="@+id/homepageSettingButton"
+                app:layout_heightPercent= "100%"
+                app:layout_aspectRatio="100%"
+                android:adjustViewBounds="true"
+                android:src="@drawable/homepage_settingselector"
+                android:clickable="true"
+                android:layout_toRightOf="@id/homepageHelpButton"
+                android:layout_marginRight="@dimen/_20sdp"
+                />
+
+            <ImageView
+                android:id="@+id/homepageShareButton"
+                app:layout_heightPercent= "100%"
+                app:layout_aspectRatio="100%"
+                android:adjustViewBounds="true"
+                android:src="@drawable/homepage_shareselector"
+                android:clickable="true"
+                android:layout_toRightOf="@id/homepageSettingButton"
+                />
+
+
+        </android.support.percent.PercentRelativeLayout>
+    </LinearLayout>
+</LinearLayout>

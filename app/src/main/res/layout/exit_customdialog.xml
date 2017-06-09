@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center">
+
+
+    <!-- We dont use relativelayout here becos margin bottom for go to next rnd doesnt
+         work with wrap content height -->
+    <LinearLayout
+        android:id="@+id/exitCustomDialog_OverallContainer"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/exitcustomdialog_background"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:gravity="center"
+        >
+
+        <com.react.reactmultiplayergame.helper.AutoResizeTextView
+            android:id="@+id/exit_currentRound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            tools:text="Round 1/10"
+            android:textSize="@dimen/_16ssp"
+            android:gravity="center"
+            android:textColor="@color/primaryBlueForMainPage"
+            android:textStyle="bold"
+            />
+
+        <RelativeLayout
+            android:id="@+id/returnToMainMenu_AdRelativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/exit_returnToMainMenuButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_28sdp"
+            android:layout_marginRight="@dimen/_28sdp"
+            android:background="@drawable/editplayername_cancelselector"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:clickable="true"
+            >
+            <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="1"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/primaryOrangeForMainPage"
+                android:textStyle="bold"
+                android:text="@string/returntomainmenu_winnerpage"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/exit_goToNextRoundButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_28sdp"
+            android:layout_marginRight="@dimen/_28sdp"
+            android:background="@drawable/editplayername_doneselector"
+            android:clickable="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_22sdp"
+            >
+            <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="1"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:text="@string/gonextround"
+                android:gravity="center"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>

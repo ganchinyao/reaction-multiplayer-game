@@ -1,0 +1,1921 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.react.reactmultiplayergame.ShopFindOutMore"
+    android:background="#f0f0f0">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/shop_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/primaryOrangeForMainPage"
+        >
+
+
+            <ImageView
+                android:id="@+id/shop_backbutton"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingRight="@dimen/_15sdp"
+                android:paddingLeft="@dimen/_1sdp"
+                android:src="@drawable/backarrowbutton"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <com.react.reactmultiplayergame.helper.AutoResizeTextView
+                android:id="@+id/shop_toolbartext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/aboutinsanemode"
+                android:textStyle="bold"
+                android:textSize="@dimen/_16ssp"
+                android:textColor="#FFFFFF"
+                android:layout_toRightOf="@id/shop_backbutton"
+                android:gravity="center_vertical"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/aboutinsanemode_topdesc"
+        android:textSize="@dimen/_12ssp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/shopfindoutmore_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" />
+
+
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<android.support.percent.PercentRelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/findoutmore_toptext"-->
+                <!--android:layout_width="match_parent"-->
+                <!--app:layout_heightPercent="16%"-->
+                <!--app:layout_marginLeftPercent="4.5%"-->
+                <!--app:layout_marginRightPercent="4.5%"-->
+                <!--app:layout_marginTopPercent="1%">-->
+                <!---->
+            <!--</RelativeLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/findoutmore_toptext"-->
+                <!--android:orientation="vertical">-->
+
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:id="@+id/shopfindoutmore_item1"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/faqbottomlineonlybackground">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/shopfindoutmore_text1"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="@dimen/_16sdp"-->
+                        <!--android:paddingLeft="@dimen/_16sdp"-->
+                        <!--android:paddingTop="@dimen/_16sdp"-->
+                        <!--android:text="@string/dialog_animalkingdom"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="@dimen/_14ssp"-->
+                        <!--app:layout_widthPercent="80%" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/shopfindoutmore_ImageView1"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_alignBottom="@id/shopfindoutmore_text1"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                        <!--android:src="@drawable/faqarrow_down"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_marginRightPercent="4.5%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+                    <!--android:id="@+id/shopfindoutmore_answer1"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:el_duration="500"-->
+                    <!--app:el_expanded="false"-->
+                    <!--app:el_parallax="0.5">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                            <!--android:layout_marginRight="@dimen/_20sdp"-->
+                            <!--android:src="@drawable/findoutmore_animalkingdom"></ImageView>-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_animalkingdom_hard"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/faqbottomlineonlybackground"-->
+                            <!--android:paddingBottom="@dimen/_10sdp"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_animalkingdom_insane"-->
+                            <!--android:textColor="@color/colorAccent"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+                    <!--</LinearLayout>-->
+                <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+                <!--&lt;!&ndash; @@@@@@@@@@@@@@@ &ndash;&gt;-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:id="@+id/shopfindoutmore_item2"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/faqbottomlineonlybackground">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/shopfindoutmore_text2"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="@dimen/_16sdp"-->
+                        <!--android:paddingLeft="@dimen/_16sdp"-->
+                        <!--android:paddingTop="@dimen/_16sdp"-->
+                        <!--android:text="@string/dialog_circlecollide"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="@dimen/_14ssp"-->
+                        <!--app:layout_widthPercent="80%" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/shopfindoutmore_ImageView2"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_alignBottom="@id/shopfindoutmore_text2"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                        <!--android:src="@drawable/faqarrow_down"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_marginRightPercent="4.5%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+                    <!--android:id="@+id/shopfindoutmore_answer2"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:el_duration="500"-->
+                    <!--app:el_expanded="false"-->
+                    <!--app:el_parallax="0.5">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                            <!--android:layout_marginRight="@dimen/_20sdp"-->
+                            <!--android:src="@drawable/findoutmore_collidingcircle"></ImageView>-->
+
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/faqbottomlineonlybackground"-->
+                            <!--android:paddingBottom="@dimen/_10sdp"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_collidingcircle_insane"-->
+                            <!--android:textColor="@color/colorAccent"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+                    <!--</LinearLayout>-->
+                <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+                <!--&lt;!&ndash; @@@@@@@@@@@@@@@ &ndash;&gt;-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:id="@+id/shopfindoutmore_item3"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/faqbottomlineonlybackground">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/shopfindoutmore_text3"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="@dimen/_16sdp"-->
+                        <!--android:paddingLeft="@dimen/_16sdp"-->
+                        <!--android:paddingTop="@dimen/_16sdp"-->
+                        <!--android:text="@string/dialog_mixingcolors"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="@dimen/_14ssp"-->
+                        <!--app:layout_widthPercent="80%" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/shopfindoutmore_ImageView3"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_alignBottom="@id/shopfindoutmore_text3"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                        <!--android:src="@drawable/faqarrow_down"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_marginRightPercent="4.5%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+                    <!--android:id="@+id/shopfindoutmore_answer3"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:el_duration="500"-->
+                    <!--app:el_expanded="false"-->
+                    <!--app:el_parallax="0.5">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                            <!--android:layout_marginRight="@dimen/_20sdp"-->
+                            <!--android:src="@drawable/findoutmore_colormixer"></ImageView>-->
+
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_colormixer_hard"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/faqbottomlineonlybackground"-->
+                            <!--android:paddingBottom="@dimen/_10sdp"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_colormixer_insane"-->
+                            <!--android:textColor="@color/colorAccent"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+                    <!--</LinearLayout>-->
+                <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+                <!--&lt;!&ndash; @@@@@@@@@@@@@@@ &ndash;&gt;-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:id="@+id/shopfindoutmore_item4"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/faqbottomlineonlybackground">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/shopfindoutmore_text4"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="@dimen/_16sdp"-->
+                        <!--android:paddingLeft="@dimen/_16sdp"-->
+                        <!--android:paddingTop="@dimen/_16sdp"-->
+                        <!--android:text="@string/dialog_screencolor"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="@dimen/_14ssp"-->
+                        <!--app:layout_widthPercent="80%" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/shopfindoutmore_ImageView4"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_alignBottom="@id/shopfindoutmore_text4"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                        <!--android:src="@drawable/faqarrow_down"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_marginRightPercent="4.5%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+                    <!--android:id="@+id/shopfindoutmore_answer4"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:el_duration="500"-->
+                    <!--app:el_expanded="false"-->
+                    <!--app:el_parallax="0.5">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                            <!--android:layout_marginRight="@dimen/_20sdp"-->
+                            <!--android:src="@drawable/findoutmore_coloredscreen"></ImageView>-->
+
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_coloredscreen_hard"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/faqbottomlineonlybackground"-->
+                            <!--android:paddingBottom="@dimen/_10sdp"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_coloredscreen_insane"-->
+                            <!--android:textColor="@color/colorAccent"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+                    <!--</LinearLayout>-->
+                <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+                <!--&lt;!&ndash; @@@@@@@@@@@@@@@ &ndash;&gt;-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:id="@+id/shopfindoutmore_item5"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/faqbottomlineonlybackground">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/shopfindoutmore_text5"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="@dimen/_16sdp"-->
+                        <!--android:paddingLeft="@dimen/_16sdp"-->
+                        <!--android:paddingTop="@dimen/_16sdp"-->
+                        <!--android:text="@string/dialog_fivecolorspanel"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="@dimen/_14ssp"-->
+                        <!--app:layout_widthPercent="80%" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/shopfindoutmore_ImageView5"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_alignBottom="@id/shopfindoutmore_text5"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                        <!--android:src="@drawable/faqarrow_down"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_marginRightPercent="4.5%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+                    <!--android:id="@+id/shopfindoutmore_answer5"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:el_duration="500"-->
+                    <!--app:el_expanded="false"-->
+                    <!--app:el_parallax="0.5">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                            <!--android:layout_marginRight="@dimen/_20sdp"-->
+                            <!--android:src="@drawable/findoutmore_colorstripes"></ImageView>-->
+
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_fivecolorpanel_hard"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/faqbottomlineonlybackground"-->
+                            <!--android:paddingBottom="@dimen/_10sdp"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_fivecolorpanel_insane"-->
+                            <!--android:textColor="@color/colorAccent"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+                    <!--</LinearLayout>-->
+                <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+                <!--&lt;!&ndash; @@@@@@@@@@@@@@@ &ndash;&gt;-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:id="@+id/shopfindoutmore_item6"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/faqbottomlineonlybackground">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/shopfindoutmore_text6"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="@dimen/_16sdp"-->
+                        <!--android:paddingLeft="@dimen/_16sdp"-->
+                        <!--android:paddingTop="@dimen/_16sdp"-->
+                        <!--android:text="@string/dialog_countryandcontinent"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="@dimen/_14ssp"-->
+                        <!--app:layout_widthPercent="80%" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/shopfindoutmore_ImageView6"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_alignBottom="@id/shopfindoutmore_text6"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                        <!--android:src="@drawable/faqarrow_down"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_marginRightPercent="4.5%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+                    <!--android:id="@+id/shopfindoutmore_answer6"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:el_duration="500"-->
+                    <!--app:el_expanded="false"-->
+                    <!--app:el_parallax="0.5">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                            <!--android:layout_marginRight="@dimen/_20sdp"-->
+                            <!--android:src="@drawable/findoutmore_country" />-->
+
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_countryandcontinent_hard"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/faqbottomlineonlybackground"-->
+                            <!--android:paddingBottom="@dimen/_10sdp"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_countryandcontinent_insane"-->
+                            <!--android:textColor="@color/colorAccent"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+                    <!--</LinearLayout>-->
+                <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+                <!--&lt;!&ndash; @@@@@@@@@@@@@@@ &ndash;&gt;-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:id="@+id/shopfindoutmore_item7"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/faqbottomlineonlybackground">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/shopfindoutmore_text7"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="@dimen/_16sdp"-->
+                        <!--android:paddingLeft="@dimen/_16sdp"-->
+                        <!--android:paddingTop="@dimen/_16sdp"-->
+                        <!--android:text="@string/dialog_solareclipse"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="@dimen/_14ssp"-->
+                        <!--app:layout_widthPercent="80%" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/shopfindoutmore_ImageView7"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_alignBottom="@id/shopfindoutmore_text7"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                        <!--android:src="@drawable/faqarrow_down"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_marginRightPercent="4.5%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+                    <!--android:id="@+id/shopfindoutmore_answer7"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:el_duration="500"-->
+                    <!--app:el_expanded="false"-->
+                    <!--app:el_parallax="0.5">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                            <!--android:layout_marginRight="@dimen/_20sdp"-->
+                            <!--android:src="@drawable/findoutmore_eclipse" />-->
+
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_eclipse_hard"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/faqbottomlineonlybackground"-->
+                            <!--android:paddingBottom="@dimen/_10sdp"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_eclipse_insane"-->
+                            <!--android:textColor="@color/colorAccent"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+                    <!--</LinearLayout>-->
+                <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+                <!--&lt;!&ndash; @@@@@@@@@@@@@@@ &ndash;&gt;-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:id="@+id/shopfindoutmore_item8"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/faqbottomlineonlybackground">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/shopfindoutmore_text8"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="@dimen/_16sdp"-->
+                        <!--android:paddingLeft="@dimen/_16sdp"-->
+                        <!--android:paddingTop="@dimen/_16sdp"-->
+                        <!--android:text="@string/dialog_mathequation"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="@dimen/_14ssp"-->
+                        <!--app:layout_widthPercent="80%" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/shopfindoutmore_ImageView8"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_alignBottom="@id/shopfindoutmore_text8"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                        <!--android:src="@drawable/faqarrow_down"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_marginRightPercent="4.5%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+                    <!--android:id="@+id/shopfindoutmore_answer8"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:el_duration="500"-->
+                    <!--app:el_expanded="false"-->
+                    <!--app:el_parallax="0.5">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                            <!--android:layout_marginRight="@dimen/_20sdp"-->
+                            <!--android:src="@drawable/findoutmore_math" />-->
+
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_mathequation_hard"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/faqbottomlineonlybackground"-->
+                            <!--android:paddingBottom="@dimen/_10sdp"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_mathequation_insane"-->
+                            <!--android:textColor="@color/colorAccent"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+                    <!--</LinearLayout>-->
+                <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+
+                <!--&lt;!&ndash; @@@@@@@@@@@@@@@ &ndash;&gt;-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:id="@+id/shopfindoutmore_item24"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/faqbottomlineonlybackground">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/shopfindoutmore_text24"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="@dimen/_16sdp"-->
+                        <!--android:paddingLeft="@dimen/_16sdp"-->
+                        <!--android:paddingTop="@dimen/_16sdp"-->
+                        <!--android:text="@string/dialog_fiveyellowcircle"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="@dimen/_14ssp"-->
+                        <!--app:layout_widthPercent="80%" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/shopfindoutmore_ImageView24"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_alignBottom="@id/shopfindoutmore_text24"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                        <!--android:src="@drawable/faqarrow_down"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_marginRightPercent="4.5%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+                    <!--android:id="@+id/shopfindoutmore_answer24"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:el_duration="500"-->
+                    <!--app:el_expanded="false"-->
+                    <!--app:el_parallax="0.5">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                            <!--android:layout_marginRight="@dimen/_20sdp"-->
+                            <!--android:src="@drawable/findoutmore_fiveyellowcircle" />-->
+
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_fiveyellowcircles_hard"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/faqbottomlineonlybackground"-->
+                            <!--android:paddingBottom="@dimen/_10sdp"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_fiveyellowcircles_insane"-->
+                            <!--android:textColor="@color/colorAccent"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+                    <!--</LinearLayout>-->
+                <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+
+                <!--&lt;!&ndash; @@@@@@@@@@@@@@@ &ndash;&gt;-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:id="@+id/shopfindoutmore_item9"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/faqbottomlineonlybackground">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/shopfindoutmore_text9"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="@dimen/_16sdp"-->
+                        <!--android:paddingLeft="@dimen/_16sdp"-->
+                        <!--android:paddingTop="@dimen/_16sdp"-->
+                        <!--android:text="@string/dialog_foodparadise"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="@dimen/_14ssp"-->
+                        <!--app:layout_widthPercent="80%" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/shopfindoutmore_ImageView9"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_alignBottom="@id/shopfindoutmore_text9"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                        <!--android:src="@drawable/faqarrow_down"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_marginRightPercent="4.5%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+                    <!--android:id="@+id/shopfindoutmore_answer9"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:el_duration="500"-->
+                    <!--app:el_expanded="false"-->
+                    <!--app:el_parallax="0.5">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                            <!--android:layout_marginRight="@dimen/_20sdp"-->
+                            <!--android:src="@drawable/findoutmore_food" />-->
+
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_foodparadise_hard"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/faqbottomlineonlybackground"-->
+                            <!--android:paddingBottom="@dimen/_10sdp"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_foodparadise_insane"-->
+                            <!--android:textColor="@color/colorAccent"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+                    <!--</LinearLayout>-->
+                <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+                <!--&lt;!&ndash; @@@@@@@@@@@@@@@ &ndash;&gt;-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:id="@+id/shopfindoutmore_item10"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/faqbottomlineonlybackground">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/shopfindoutmore_text10"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="@dimen/_16sdp"-->
+                        <!--android:paddingLeft="@dimen/_16sdp"-->
+                        <!--android:paddingTop="@dimen/_16sdp"-->
+                        <!--android:text="@string/dialog_identifyinglanguage"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="@dimen/_14ssp"-->
+                        <!--app:layout_widthPercent="80%" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/shopfindoutmore_ImageView10"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_alignBottom="@id/shopfindoutmore_text10"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                        <!--android:src="@drawable/faqarrow_down"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_marginRightPercent="4.5%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+                    <!--android:id="@+id/shopfindoutmore_answer10"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:el_duration="500"-->
+                    <!--app:el_expanded="false"-->
+                    <!--app:el_parallax="0.5">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                            <!--android:layout_marginRight="@dimen/_20sdp"-->
+                            <!--android:src="@drawable/findoutmore_identifylanguage" />-->
+
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_identifylanguage_hard"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/faqbottomlineonlybackground"-->
+                            <!--android:paddingBottom="@dimen/_10sdp"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_identifylanguage_insane"-->
+                            <!--android:textColor="@color/colorAccent"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+                    <!--</LinearLayout>-->
+                <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+
+                <!--&lt;!&ndash; @@@@@@@@@@@@@@@ &ndash;&gt;-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:id="@+id/shopfindoutmore_item11"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/faqbottomlineonlybackground">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/shopfindoutmore_text11"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="@dimen/_16sdp"-->
+                        <!--android:paddingLeft="@dimen/_16sdp"-->
+                        <!--android:paddingTop="@dimen/_16sdp"-->
+                        <!--android:text="@string/dialog_illusioncircle"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="@dimen/_14ssp"-->
+                        <!--app:layout_widthPercent="80%" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/shopfindoutmore_ImageView11"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_alignBottom="@id/shopfindoutmore_text11"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                        <!--android:src="@drawable/faqarrow_down"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_marginRightPercent="4.5%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+                    <!--android:id="@+id/shopfindoutmore_answer11"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:el_duration="500"-->
+                    <!--app:el_expanded="false"-->
+                    <!--app:el_parallax="0.5">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                            <!--android:layout_marginRight="@dimen/_20sdp"-->
+                            <!--android:src="@drawable/findoutmore_illusioncircle" />-->
+
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_illusioncircle_hard"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/faqbottomlineonlybackground"-->
+                            <!--android:paddingBottom="@dimen/_10sdp"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_illusioncircle_insane"-->
+                            <!--android:textColor="@color/colorAccent"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+                    <!--</LinearLayout>-->
+                <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+
+                <!--&lt;!&ndash; @@@@@@@@@@@@@@@ &ndash;&gt;-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:id="@+id/shopfindoutmore_item12"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/faqbottomlineonlybackground">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/shopfindoutmore_text12"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="@dimen/_16sdp"-->
+                        <!--android:paddingLeft="@dimen/_16sdp"-->
+                        <!--android:paddingTop="@dimen/_16sdp"-->
+                        <!--android:text="@string/dialog_illusiongear"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="@dimen/_14ssp"-->
+                        <!--app:layout_widthPercent="80%" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/shopfindoutmore_ImageView12"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_alignBottom="@id/shopfindoutmore_text12"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                        <!--android:src="@drawable/faqarrow_down"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_marginRightPercent="4.5%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+                    <!--android:id="@+id/shopfindoutmore_answer12"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:el_duration="500"-->
+                    <!--app:el_expanded="false"-->
+                    <!--app:el_parallax="0.5">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                            <!--android:layout_marginRight="@dimen/_20sdp"-->
+                            <!--android:src="@drawable/findoutmore_illusiongear" />-->
+
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_illusiongear_hard"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/faqbottomlineonlybackground"-->
+                            <!--android:paddingBottom="@dimen/_10sdp"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_illusiongear_insane"-->
+                            <!--android:textColor="@color/colorAccent"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+                    <!--</LinearLayout>-->
+                <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+                <!--@@@@@@@@@@@@@@@-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:id="@+id/shopfindoutmore_item13"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/faqbottomlineonlybackground">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/shopfindoutmore_text13"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="@dimen/_16sdp"-->
+                        <!--android:paddingLeft="@dimen/_16sdp"-->
+                        <!--android:paddingTop="@dimen/_16sdp"-->
+                        <!--android:text="@string/dialog_illusionrectangle"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="@dimen/_14ssp"-->
+                        <!--app:layout_widthPercent="80%" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/shopfindoutmore_ImageView13"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_alignBottom="@id/shopfindoutmore_text13"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                        <!--android:src="@drawable/faqarrow_down"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_marginRightPercent="4.5%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+                    <!--android:id="@+id/shopfindoutmore_answer13"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:el_duration="500"-->
+                    <!--app:el_expanded="false"-->
+                    <!--app:el_parallax="0.5">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                            <!--android:layout_marginRight="@dimen/_20sdp"-->
+                            <!--android:src="@drawable/findoutmore_illusionrect" />-->
+
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_illusionrect_hard"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/faqbottomlineonlybackground"-->
+                            <!--android:paddingBottom="@dimen/_10sdp"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_illusionrect_insane"-->
+                            <!--android:textColor="@color/colorAccent"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+                    <!--</LinearLayout>-->
+                <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+
+                <!--&lt;!&ndash; @@@@@@@@@@@@@@@ &ndash;&gt;-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:id="@+id/shopfindoutmore_item14"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/faqbottomlineonlybackground">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/shopfindoutmore_text14"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="@dimen/_16sdp"-->
+                        <!--android:paddingLeft="@dimen/_16sdp"-->
+                        <!--android:paddingTop="@dimen/_16sdp"-->
+                        <!--android:text="@string/dialog_mandn"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="@dimen/_14ssp"-->
+                        <!--app:layout_widthPercent="80%" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/shopfindoutmore_ImageView14"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_alignBottom="@id/shopfindoutmore_text14"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                        <!--android:src="@drawable/faqarrow_down"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_marginRightPercent="4.5%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+                    <!--android:id="@+id/shopfindoutmore_answer14"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:el_duration="500"-->
+                    <!--app:el_expanded="false"-->
+                    <!--app:el_parallax="0.5">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                            <!--android:layout_marginRight="@dimen/_20sdp"-->
+                            <!--android:src="@drawable/findoutmore_mandn" />-->
+
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_mandn_hard"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/faqbottomlineonlybackground"-->
+                            <!--android:paddingBottom="@dimen/_10sdp"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_mandn_insane"-->
+                            <!--android:textColor="@color/colorAccent"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+                    <!--</LinearLayout>-->
+                <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+                <!--&lt;!&ndash; @@@@@@@@@@@@@@@ &ndash;&gt;-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:id="@+id/shopfindoutmore_item15"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/faqbottomlineonlybackground">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/shopfindoutmore_text15"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="@dimen/_16sdp"-->
+                        <!--android:paddingLeft="@dimen/_16sdp"-->
+                        <!--android:paddingTop="@dimen/_16sdp"-->
+                        <!--android:text="@string/dialog_perfectmatch"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="@dimen/_14ssp"-->
+                        <!--app:layout_widthPercent="80%" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/shopfindoutmore_ImageView15"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_alignBottom="@id/shopfindoutmore_text15"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                        <!--android:src="@drawable/faqarrow_down"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_marginRightPercent="4.5%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+                    <!--android:id="@+id/shopfindoutmore_answer15"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:el_duration="500"-->
+                    <!--app:el_expanded="false"-->
+                    <!--app:el_parallax="0.5">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                            <!--android:layout_marginRight="@dimen/_20sdp"-->
+                            <!--android:src="@drawable/findoutmore_perfectmatch" />-->
+
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_perfectmatch_hard"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/faqbottomlineonlybackground"-->
+                            <!--android:paddingBottom="@dimen/_10sdp"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_perfectmatch_insane"-->
+                            <!--android:textColor="@color/colorAccent"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+                    <!--</LinearLayout>-->
+                <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+                <!--&lt;!&ndash; @@@@@@@@@@@@@@@ &ndash;&gt;-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:id="@+id/shopfindoutmore_item16"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/faqbottomlineonlybackground">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/shopfindoutmore_text16"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="@dimen/_16sdp"-->
+                        <!--android:paddingLeft="@dimen/_16sdp"-->
+                        <!--android:paddingTop="@dimen/_16sdp"-->
+                        <!--android:text="@string/dialog_colormatchwords"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="@dimen/_14ssp"-->
+                        <!--app:layout_widthPercent="80%" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/shopfindoutmore_ImageView16"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_alignBottom="@id/shopfindoutmore_text16"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                        <!--android:src="@drawable/faqarrow_down"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_marginRightPercent="4.5%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+                    <!--android:id="@+id/shopfindoutmore_answer16"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:el_duration="500"-->
+                    <!--app:el_expanded="false"-->
+                    <!--app:el_parallax="0.5">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                            <!--android:layout_marginRight="@dimen/_20sdp"-->
+                            <!--android:src="@drawable/findoutmore_colormatchwords" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_colormatchwords_hard"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/faqbottomlineonlybackground"-->
+                            <!--android:paddingBottom="@dimen/_10sdp"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_colormatchwords_insane"-->
+                            <!--android:textColor="@color/colorAccent"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+                    <!--</LinearLayout>-->
+                <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+                <!--&lt;!&ndash; @@@@@@@@@@@@@@@ &ndash;&gt;-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:id="@+id/shopfindoutmore_item17"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/faqbottomlineonlybackground">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/shopfindoutmore_text17"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="@dimen/_16sdp"-->
+                        <!--android:paddingLeft="@dimen/_16sdp"-->
+                        <!--android:paddingTop="@dimen/_16sdp"-->
+                        <!--android:text="@string/dialog_gradientorb"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="@dimen/_14ssp"-->
+                        <!--app:layout_widthPercent="80%" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/shopfindoutmore_ImageView17"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_alignBottom="@id/shopfindoutmore_text17"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                        <!--android:src="@drawable/faqarrow_down"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_marginRightPercent="4.5%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+                    <!--android:id="@+id/shopfindoutmore_answer17"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:el_duration="500"-->
+                    <!--app:el_expanded="false"-->
+                    <!--app:el_parallax="0.5">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                            <!--android:layout_marginRight="@dimen/_20sdp"-->
+                            <!--android:src="@drawable/findoutmore_gradientorb" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_gradientorb_hard"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/faqbottomlineonlybackground"-->
+                            <!--android:paddingBottom="@dimen/_10sdp"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_gradientorb_insane"-->
+                            <!--android:textColor="@color/colorAccent"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+                    <!--</LinearLayout>-->
+                <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+                <!--&lt;!&ndash; @@@@@@@@@@@@@@@ &ndash;&gt;-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:id="@+id/shopfindoutmore_item18"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/faqbottomlineonlybackground">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/shopfindoutmore_text18"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="@dimen/_16sdp"-->
+                        <!--android:paddingLeft="@dimen/_16sdp"-->
+                        <!--android:paddingTop="@dimen/_16sdp"-->
+                        <!--android:text="@string/dialog_neonarrows"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="@dimen/_14ssp"-->
+                        <!--app:layout_widthPercent="80%" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/shopfindoutmore_ImageView18"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_alignBottom="@id/shopfindoutmore_text18"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                        <!--android:src="@drawable/faqarrow_down"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_marginRightPercent="4.5%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+                    <!--android:id="@+id/shopfindoutmore_answer18"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:el_duration="500"-->
+                    <!--app:el_expanded="false"-->
+                    <!--app:el_parallax="0.5">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                            <!--android:layout_marginRight="@dimen/_20sdp"-->
+                            <!--android:src="@drawable/findoutmore_neonarrow" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_neonarrow_hard"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/faqbottomlineonlybackground"-->
+                            <!--android:paddingBottom="@dimen/_10sdp"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_neonarrow_insane"-->
+                            <!--android:textColor="@color/colorAccent"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+                    <!--</LinearLayout>-->
+                <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+                <!--&lt;!&ndash; @@@@@@@@@@@@@@@ &ndash;&gt;-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:id="@+id/shopfindoutmore_item19"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/faqbottomlineonlybackground">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/shopfindoutmore_text19"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="@dimen/_16sdp"-->
+                        <!--android:paddingLeft="@dimen/_16sdp"-->
+                        <!--android:paddingTop="@dimen/_16sdp"-->
+                        <!--android:text="@string/dialog_oandx"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="@dimen/_14ssp"-->
+                        <!--app:layout_widthPercent="80%" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/shopfindoutmore_ImageView19"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_alignBottom="@id/shopfindoutmore_text19"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                        <!--android:src="@drawable/faqarrow_down"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_marginRightPercent="4.5%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+                    <!--android:id="@+id/shopfindoutmore_answer19"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:el_duration="500"-->
+                    <!--app:el_expanded="false"-->
+                    <!--app:el_parallax="0.5">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                            <!--android:layout_marginRight="@dimen/_20sdp"-->
+                            <!--android:src="@drawable/findoutmore_oandx" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_oandx_hard"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/faqbottomlineonlybackground"-->
+                            <!--android:paddingBottom="@dimen/_10sdp"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_oandx_insane"-->
+                            <!--android:textColor="@color/colorAccent"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+                    <!--</LinearLayout>-->
+                <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+                <!--&lt;!&ndash; @@@@@@@@@@@@@@@ &ndash;&gt;-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:id="@+id/shopfindoutmore_item20"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/faqbottomlineonlybackground">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/shopfindoutmore_text20"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="@dimen/_16sdp"-->
+                        <!--android:paddingLeft="@dimen/_16sdp"-->
+                        <!--android:paddingTop="@dimen/_16sdp"-->
+                        <!--android:text="@string/dialog_oddandvowel"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="@dimen/_14ssp"-->
+                        <!--app:layout_widthPercent="80%" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/shopfindoutmore_ImageView20"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_alignBottom="@id/shopfindoutmore_text20"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                        <!--android:src="@drawable/faqarrow_down"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_marginRightPercent="4.5%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+                    <!--android:id="@+id/shopfindoutmore_answer20"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:el_duration="500"-->
+                    <!--app:el_expanded="false"-->
+                    <!--app:el_parallax="0.5">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                            <!--android:layout_marginRight="@dimen/_20sdp"-->
+                            <!--android:src="@drawable/findoutmore_oddandvowel" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_oddandvowel_hard"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/faqbottomlineonlybackground"-->
+                            <!--android:paddingBottom="@dimen/_10sdp"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_oddandvowel_insane"-->
+                            <!--android:textColor="@color/colorAccent"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+                    <!--</LinearLayout>-->
+                <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+                <!--&lt;!&ndash; @@@@@@@@@@@@@@@ &ndash;&gt;-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:id="@+id/shopfindoutmore_item21"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/faqbottomlineonlybackground">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/shopfindoutmore_text21"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="@dimen/_16sdp"-->
+                        <!--android:paddingLeft="@dimen/_16sdp"-->
+                        <!--android:paddingTop="@dimen/_16sdp"-->
+                        <!--android:text="@string/dialog_smilingface"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="@dimen/_14ssp"-->
+                        <!--app:layout_widthPercent="80%" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/shopfindoutmore_ImageView21"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_alignBottom="@id/shopfindoutmore_text21"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                        <!--android:src="@drawable/faqarrow_down"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_marginRightPercent="4.5%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+                    <!--android:id="@+id/shopfindoutmore_answer21"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:el_duration="500"-->
+                    <!--app:el_expanded="false"-->
+                    <!--app:el_parallax="0.5">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                            <!--android:layout_marginRight="@dimen/_20sdp"-->
+                            <!--android:src="@drawable/findoutmore_smilingfaces" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_smilingface_hard"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/faqbottomlineonlybackground"-->
+                            <!--android:paddingBottom="@dimen/_10sdp"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_smilingface_insane"-->
+                            <!--android:textColor="@color/colorAccent"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+                    <!--</LinearLayout>-->
+                <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+                <!--&lt;!&ndash; @@@@@@@@@@@@@@@ &ndash;&gt;-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:id="@+id/shopfindoutmore_item22"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/faqbottomlineonlybackground">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/shopfindoutmore_text22"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="@dimen/_16sdp"-->
+                        <!--android:paddingLeft="@dimen/_16sdp"-->
+                        <!--android:paddingTop="@dimen/_16sdp"-->
+                        <!--android:text="@string/dialog_spam"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="@dimen/_14ssp"-->
+                        <!--app:layout_widthPercent="80%" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/shopfindoutmore_ImageView22"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_alignBottom="@id/shopfindoutmore_text22"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                        <!--android:src="@drawable/faqarrow_down"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_marginRightPercent="4.5%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+                    <!--android:id="@+id/shopfindoutmore_answer22"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:el_duration="500"-->
+                    <!--app:el_expanded="false"-->
+                    <!--app:el_parallax="0.5">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                            <!--android:layout_marginRight="@dimen/_20sdp"-->
+                            <!--android:src="@drawable/findoutmore_touchingspam" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_touchingspam_hard"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/faqbottomlineonlybackground"-->
+                            <!--android:paddingBottom="@dimen/_10sdp"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_touchingspam_insane"-->
+                            <!--android:textColor="@color/colorAccent"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+                    <!--</LinearLayout>-->
+                <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+                <!--&lt;!&ndash; @@@@@@@@@@@@@@@ &ndash;&gt;-->
+
+                <!--<android.support.percent.PercentRelativeLayout-->
+                    <!--android:id="@+id/shopfindoutmore_item23"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/faqbottomlineonlybackground">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/shopfindoutmore_text23"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="@dimen/_16sdp"-->
+                        <!--android:paddingLeft="@dimen/_16sdp"-->
+                        <!--android:paddingTop="@dimen/_16sdp"-->
+                        <!--android:text="@string/dialog_unitconversion"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:textSize="@dimen/_14ssp"-->
+                        <!--app:layout_widthPercent="80%" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/shopfindoutmore_ImageView23"-->
+                        <!--android:layout_height="@dimen/_16sdp"-->
+                        <!--android:layout_alignBottom="@id/shopfindoutmore_text23"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginBottom="@dimen/_16sdp"-->
+                        <!--android:src="@drawable/faqarrow_down"-->
+                        <!--app:layout_aspectRatio="100%"-->
+                        <!--app:layout_marginRightPercent="4.5%" />-->
+                <!--</android.support.percent.PercentRelativeLayout>-->
+
+                <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+                    <!--android:id="@+id/shopfindoutmore_answer23"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:el_duration="500"-->
+                    <!--app:el_expanded="false"-->
+                    <!--app:el_parallax="0.5">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                            <!--android:layout_marginRight="@dimen/_20sdp"-->
+                            <!--android:src="@drawable/findoutmore_unitconversion" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_unitconversion_hard"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/faqbottomlineonlybackground"-->
+                            <!--android:paddingBottom="@dimen/_10sdp"-->
+                            <!--android:paddingLeft="@dimen/_16sdp"-->
+                            <!--android:paddingRight="@dimen/_16sdp"-->
+                            <!--android:text="@string/findoutmore_unitconversion_insane"-->
+                            <!--android:textColor="@color/colorAccent"-->
+                            <!--android:textSize="@dimen/_12ssp" />-->
+                    <!--</LinearLayout>-->
+                <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+            <!--</LinearLayout>-->
+
+        <!--</android.support.percent.PercentRelativeLayout>-->
+    <!--</ScrollView>-->
+</LinearLayout>
