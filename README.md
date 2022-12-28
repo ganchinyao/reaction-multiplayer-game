@@ -1,10 +1,10 @@
-This is the code repository for the android app [React! Multiplayer Game](https://play.google.com/store/apps/details?id=com.react.reactmultiplayergame).
+This is the source code for the android app [React! Multiplayer Game](https://play.google.com/store/apps/details?id=com.react.reactmultiplayergame).
 
 # About
 
 React! Multiplayer Game is an Android multiplayer reaction game in which up to four players can play on the same phone and participate in various mini-games. These mini-games test the players' reactions by requiring them to tap on their buttons when specific conditions are met.
 
-![promo graphic](./promo/Screenshot1.png)
+<img src="./promo/Screenshot1.png" width=600 />
 
 # Features
 
@@ -17,3 +17,7 @@ React! Multiplayer Game is an Android multiplayer reaction game in which up to f
 This app will no longer be maintained. Since the source code is more than 6 years old, it probably requires lots of changes to gradle and the build files before you can build it. Many android APIs may no longer work if built with newer version of Android.
 
 All secret keys have been modified with `SAMPLE_TO_REPLACE`. Replace them with your own.
+
+# Note
+
+All image and sound assets used in this repo are either free to use, or purchased with license. Please do not use them for other purposes.
